@@ -104,7 +104,7 @@ const Navbar = () => {
       </nav>
 
       {/* Navbar Mobile */}
-      <div className="md:hidden mb-10 bg-white w-full p-2 md:px-6 ">
+      <div className="md:hidden mb-10 bg-white w-full p-2 md:px-6">
       <Image src={Logo} className="navLogo" width={100} height={100} alt="Palapa" />
       </div>
       <nav className="md:hidden fixed bottom-0 left-0 w-full bg-white shadow-t-md py-2 flex justify-around items-center z-50 border-t">

@@ -7,13 +7,14 @@ import Footer from "./components/Footer"
 import { FaCheckCircle } from 'react-icons/fa';
 import Stories from "./assets/ImageUnggul.jpg";
 import Client_Kementrian from "./assets/Client-1.png"
+import hero1 from "./assets/ImageUs1.jpg"
+import hero2 from "./assets/ImageUs3.jpg"
+import hero3 from "./assets/ImageUs5.jpg"
+import hero4 from "./assets/ImageUs6.jpg"
 import Client_Lapas from "./assets/Client-2.png"
 import IkhlasDisplay from "./components/IkhlasMap";
 
 import { RiMoneyDollarCircleLine, RiStackshareLine, RiHandCoinLine, RiGroup2Line } from "react-icons/ri";
-
-import { FaMapMarkerAlt, FaWhatsapp   } from "react-icons/fa";
-import { MdOutlineMarkEmailRead } from "react-icons/md";
 
 import dum from "@/app/assets/About-1.png";
 
@@ -113,22 +114,22 @@ export default function Home() {
         <div className="relative w-full md:h-[400px] hidden lg:block mb-20">
           {/* Image 1 */}
           <div className="absolute bottom-[100%] left-0 w-[200px] h-[300px] lg:w-[240px] md:h-[280px]">
-            <Image src={dum} alt="Placeholder Image 1" layout="fill" className="object-cover rounded-xl shadow-lg shadow-gray-400/50" />
+            <Image src={hero1} alt="Placeholder Image 1" layout="fill" className="object-cover rounded-xl shadow-lg shadow-gray-400/50" />
           </div>
 
           {/* Image 2 */}
-          <div className="absolute top-2 left-[20%] w-[200px] h-[300px] lg:w-[240px] md:h-[280px]">
-            <Image src={dum} alt="Placeholder Image 2" layout="fill" className="object-cover rounded-xl shadow-lg shadow-gray-400/50" />
+          <div className="absolute top-0 left-[20%] w-[200px] h-[300px] lg:w-[240px] md:h-[340px]">
+            <Image src={hero2} alt="Placeholder Image 2" layout="fill" className="object-cover rounded-xl shadow-lg shadow-gray-400/50" />
           </div>
 
           {/* Image 3 */}
           <div className="absolute bottom-[100%] right-0 w-[200px] h-[300px] lg:w-[240px] md:h-[280px]">
-            <Image src={dum} alt="Placeholder Image 3" layout="fill" className="object-cover rounded-xl shadow-lg shadow-gray-400/50" />
+            <Image src={hero3} alt="Placeholder Image 3" layout="fill" className="object-cover rounded-xl shadow-lg shadow-gray-400/50" />
           </div>
 
           {/* Image 4 */}
-          <div className="absolute top-2 right-[20%] w-[200px] h-[300px] lg:w-[240px] md:h-[280px]">
-            <Image src={dum} alt="Placeholder Image 4" layout="fill" className="object-cover rounded-xl shadow-lg shadow-gray-400/50" />
+          <div className="absolute top-0 right-[20%] w-[200px] h-[300px] lg:w-[240px] md:h-[340px]">
+            <Image src={hero4} alt="Placeholder Image 4" layout="fill" className="object-cover rounded-xl shadow-lg shadow-gray-400/50" />
           </div>
         </div>
       </div>

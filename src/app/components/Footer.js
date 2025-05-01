@@ -93,7 +93,7 @@ export default function Footer() {
       </div>
 
       {/* Copyright */}
-      <div className="bg-[#2B313B] p-5 w-full text-white text-center">
+      <div className="bg-[#2B313B] p-5 w-full text-white text-center md:mb-0 mb-14">
         <p className="text-xs sm:text-sm md:text-base">
             © {new Date().getFullYear()} All Right Reserved | PT. Palapa Teknologi
         </p>
