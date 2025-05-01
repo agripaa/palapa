@@ -1,0 +1,4 @@
+[build]
+  base = "palapa"
+  command = "npm run build"
+  publish = ".next"
