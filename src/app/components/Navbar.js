@@ -5,6 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Logo from "@/app/assets/Logo.png";
 import { FiInfo, FiShoppingBag, FiPhone } from "react-icons/fi"; 
+import { RiParentLine, RiHome2Line} from "react-icons/ri";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -111,7 +112,7 @@ const Navbar = () => {
           href="/"
           className={`flex flex-col items-center text-gray-600`}
         >
-          <FiInfo className="text-2xl" />
+          <RiHome2Line className="text-2xl" />
           <span className="text-xs">Beranda</span>
         </Link>
         <a
@@ -127,6 +128,14 @@ const Navbar = () => {
         >
           <FiShoppingBag className="text-2xl" />
           <span className="text-xs">Produk</span>
+        </a>
+
+        <a
+          href="/partner"
+          className={`flex flex-col items-center text-gray-600`}
+        >
+          <RiParentLine className="text-2xl" />
+          <span className="text-xs">Partner</span>
         </a>
         
         <Link

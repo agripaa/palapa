@@ -89,7 +89,7 @@ export default function Home() {
           </h1>
           <p className="font-normal 
           text-sm md:text-lg text-left md:text-center text-[#3D3D3D]
-          w-full md:w-4/5 lg:w-3/4 xl:w-3/5
+          w-full md:w-4/5 lg:w-2/4 xl:w-3/5
           mt-5 mx-auto
           ">
             PT. Palapa Teknologi Indonesia didirikan secara resmi pada 26 September 2005 dan bergerak di bidang
@@ -110,47 +110,27 @@ export default function Home() {
             Get Started
           </Link>
         </div>
-        <div className="relative w-full md:h-[400px] mb-20">
-        {/* Image 1 */}
-        <div className="absolute bottom-[100%] left-12 w-[230px] h-[300px]">
-          <Image 
-            src={dum} 
-            alt="Placeholder Image 1" 
-            layout="fill"
-            className="object-cover rounded-xl shadow-lg shadow-gray-400/50"
-          />
-        </div>
+        <div className="relative w-full md:h-[400px] hidden lg:block mb-20">
+          {/* Image 1 */}
+          <div className="absolute bottom-[100%] left-0 w-[200px] h-[300px] lg:w-[240px] md:h-[280px]">
+            <Image src={dum} alt="Placeholder Image 1" layout="fill" className="object-cover rounded-xl shadow-lg shadow-gray-400/50" />
+          </div>
 
-        {/* Image 2 */}
-        <div className="absolute bottom-0 left-[20%] w-[230px] h-[300px]">
-          <Image 
-            src={dum} 
-            alt="Placeholder Image 2" 
-            layout="fill"
-            className="object-cover rounded-xl shadow-lg shadow-gray-400/50"
-          />
-        </div>
+          {/* Image 2 */}
+          <div className="absolute top-2 left-[20%] w-[200px] h-[300px] lg:w-[240px] md:h-[280px]">
+            <Image src={dum} alt="Placeholder Image 2" layout="fill" className="object-cover rounded-xl shadow-lg shadow-gray-400/50" />
+          </div>
 
-        {/* Image 3 */}
-        <div className="absolute bottom-[100%] right-12 w-[230px] h-[300px]">
-          <Image 
-            src={dum} 
-            alt="Placeholder Image 3" 
-            layout="fill"
-            className="object-cover rounded-xl shadow-lg shadow-gray-400/50"
-          />
-        </div>
+          {/* Image 3 */}
+          <div className="absolute bottom-[100%] right-0 w-[200px] h-[300px] lg:w-[240px] md:h-[280px]">
+            <Image src={dum} alt="Placeholder Image 3" layout="fill" className="object-cover rounded-xl shadow-lg shadow-gray-400/50" />
+          </div>
 
-        {/* Image 4 */}
-        <div className="absolute bottom-0 right-[20%] w-[230px] h-[300px]">
-          <Image 
-            src={dum} 
-            alt="Placeholder Image 4" 
-            layout="fill"
-            className="object-cover rounded-xl shadow-lg shadow-gray-400/50"
-          />
+          {/* Image 4 */}
+          <div className="absolute top-2 right-[20%] w-[200px] h-[300px] lg:w-[240px] md:h-[280px]">
+            <Image src={dum} alt="Placeholder Image 4" layout="fill" className="object-cover rounded-xl shadow-lg shadow-gray-400/50" />
+          </div>
         </div>
-      </div>
       </div>
 
       <div>
@@ -249,92 +229,9 @@ export default function Home() {
             text-[#002453]
             mt-20 md:mt-40 mb-32"
           >
-
-          <h3 className="
-            w-fit
-            mx-auto
-            px-6 py-3
-            rounded-lg
-            bg-[#E7F0FD]
-            text-[#639DF7] text-sm font-medium">
-              Company Values
-          </h3>
-
-          <h1 className="
-            px-3 
-            font-bold text-[#3D3D3D] text-700 text-xl md:text-3xl
-            
-            mx-auto">
-              Nilai-Nilai Perusahaan 
-          </h1>
           <IkhlasDisplay />
 
         </div>
-      </div>
-
-      {/* CONTACT US */}
-      <div id="contact-us" className="md:hidden mb-20">
-        <div className="relative w-[90%] mx-auto">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.6196948688334!2d106.89035037418397!3d-6.31358696178271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69edfe6ea481f9%3A0xd2ded6731b79fb6!2sGRAHA%20PASOPATI%20NUSANTARA!5e0!3m2!1sid!2sid!4v1741107375046!5m2!1sid!2sid"
-          loading="lazy" 
-          className="w-full min-h-[250px] rounded-3xl shadow-[6px_6px_10px_rgba(0,0,0,0.2)]">
-          </iframe>
-
-        {/* Tombol lihat di Google Maps */}
-          <a
-            href="https://www.google.com/maps?q=Graha+Pasopati+Nusantara"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="absolute bottom-4 left-1/3 transform -translate-x-1/2 bg-white text-gray-900 px-4 py-2 rounded-lg text-xs font-semibold shadow-md flex items-start justify-left space-x-2 hover:bg-gray-200"
-          >
-            <FaMapMarkerAlt className="text-gray-600" />
-            <span>Lihat dari Google Maps</span>
-          </a>
-        </div>
-
-        <div className="flex w-4/5 mt-10 mx-auto justify-between gap-10">
-            
-            <div className="flex flex-col justify-left gap-5">
-                <h3 className="
-                w-fit
-                
-                px-4 py-2
-                rounded-lg
-                bg-[#E7F0FD]
-                text-[#639DF7] text-sm font-medium">
-                  Contact Us  
-                </h3>
-                <h1 className="
-                
-                font-bold text-[#3D3D3D] text-700 text-xl
-                
-                ">
-                Konsultasi Sekarang
-                </h1>
-
-                <div className="flex gap-4 text-3d3d3d text-xs items-start">
-                  <FaMapMarkerAlt className="w-14 h-8 text-[#3882F5] font-semibold"/>
-                  <h4>Jl.Raya Gempol Kavling II No.19, RT.006/002, Gempol Kel, Ceger, Kec. Cipayung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13820</h4>
-                </div>
-
-                {/* BUTTON CTA */}
-                <div className="text-3d3d3d text-sm justify-between items-center">
-                  <div className="flex gap-3 border border-[#DAE5EB] rounded-xl p-4 items-center w-full">
-                    <div className="bg-[#E7F0FD] rounded-full p-2">
-                    <FaWhatsapp />
-                    </div>
-                    <h4 className="bg-[#E7F0FD] rounded-xl p-2 w-full text-center">Chat Via WhatsApp</h4>
-                  </div>
-
-                  <div className="flex gap-3 border border-[#DAE5EB] rounded-xl p-4 items-center w-full mt-6">
-                    <div className="bg-[#E7F0FD] rounded-full p-2">
-                   <MdOutlineMarkEmailRead />
-                   </div>
-                   <h4 className="bg-[#E7F0FD] rounded-xl p-2 w-full text-center">Chat Via Email</h4>
-                  </div>
-                </div>
-            </div>
-            </div>
       </div>
 
       {/* FOOTER */}

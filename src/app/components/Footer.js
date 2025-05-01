@@ -74,10 +74,10 @@ export default function Footer() {
           <div className="w-full md:w-1/4">
             <h1 className="text-xl font-bold">Umum</h1>
             <div className="mt-5 space-y-4">
-              <Link href="/#products" className="md:text-base text-md flex items-center gap-3">
+              <Link href="/" className="md:text-base text-md flex items-center gap-3">
                 Tentang Kami
               </Link>
-              <Link href="/class" className="md:text-base text-md flex items-center gap-3">
+              <Link href="/" className="md:text-base text-md flex items-center gap-3">
                 Produk Kami
               </Link>
               <Link
