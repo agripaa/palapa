@@ -61,19 +61,9 @@ export default function Product() {
               text-[#002453]"
             >
 
-              <h3 className="
-              w-fit
-              mx-auto
-              px-4 py-2
-              rounded-xl
-              bg-[#E7F0FD]
-              text-[#639DF7] text-base font-medium">
-                Produk layanan Kami
-              </h3>
-
               <h1 className="
               px-3 
-              font-bold text-[#3D3D3D] text-700 text-xl md:text-4xl
+              font-bold text-[#3D3D3D] text-700 text-4xl
               text-center
               mx-auto">
                 Solusi Digital Terdepan Untuk<br/>Komunikasi Efektif 
@@ -86,8 +76,8 @@ export default function Product() {
                     <div className="flex flex-col-reverse md:flex-row-reverse mt-10 gap-4 md:gap-16"
                     >
                       <div className="flex flex-col md:flex-col w-full md:w-[50%] text-[#3D3D3D] text-xl">
-                        <h1 className="text-2xl md:text-2xl lg:text-4xl font-semibold text-[#3D3D3D] mt-20 md:mt-10">I-Wartelsus</h1>
-                        <p className="mt-5 text-sm md:text-md lg:text-base">adalah Integrated Warung Telekomunikasi Khusus yaitu fasilitas telekomunikasi
+                        <h1 className="text-3xl lg:text-4xl font-semibold text-[#3D3D3D] mt-20 md:mt-10">I-Wartelsus</h1>
+                        <p className="mt-5 text-lg">adalah Integrated Warung Telekomunikasi Khusus yaitu fasilitas telekomunikasi
                           berbasis teknologi data yang terintegrasi on line secara nasional dalam sistem komunikasi
                           berbentuk voice call dan video call serta layanan komunikasi dan informasi lainnya, sebagai
                           media komunikasi legal yang terpantau, aman, nyaman dan tidak melanggar ketentuan yang
@@ -108,8 +98,8 @@ export default function Product() {
                     <div className="flex flex-col-reverse md:flex-row mt-20 gap-4 md:gap-16"
                     >
                       <div className="flex flex-col md:w-[50%] text-[#3D3D3D] text-xl">
-                        <h1 className="text-2xl md:text-2xl lg:text-4xl font-semibold text-[#3D3D3D] mt-20 md:mt-10">IMC Pas (Integrated Monitoring Pemasyarakatan Center)</h1>
-                        <p className="mt-5 text-sm md:text-md lg:text-base">adalah fasilitas pusat pemantauan berbasis teknologi data yang terintegrasi on line
+                        <h1 className="text-3xl lg:text-4xl font-semibold text-[#3D3D3D] mt-20 md:mt-10">IMC Pas (Integrated Monitoring Pemasyarakatan Center)</h1>
+                        <p className="mt-5 text-lg">adalah fasilitas pusat pemantauan berbasis teknologi data yang terintegrasi on line
                         secara nasional sebagai media monitoring dan deteksi dini Pemasyarakatan. Fasilitas ini
                         berbasis teknologi informasi yang terhubung secara online di seluruh wilayah nasional,
                         memungkinkan pemantauan secara terintegrasi. IMC Pas bertujuan untuk meningkatkan
@@ -132,8 +122,8 @@ export default function Product() {
                     <div className="flex flex-col-reverse md:flex-row-reverse my-20 mt-20 lg:mt-40 gap-4 md:gap-16"
                     >
                       <div className="flex flex-col md:w-[50%] text-[#3D3D3D] text-xl">
-                        <h1 className="text-xl md:text-lg lg:text-3xl font-semibold text-[#3D3D3D] mt-20 md:mt-0 lg:mt-10">Paypas (Payment Pemasyarakatan)</h1>
-                        <p className="mt-5 text-sm md:text-md lg:text-base">Paypas (Payment Pemasyarakatan) adalah sistem pembayaran elektronik yang memanfaatkan
+                        <h1 className="text-3xl lg:text-4xl font-semibold text-[#3D3D3D] mt-20 md:mt-0 lg:mt-10">Paypas (Payment Pemasyarakatan)</h1>
+                        <p className="mt-5 text-lg">Paypas (Payment Pemasyarakatan) adalah sistem pembayaran elektronik yang memanfaatkan
                           virtual account dan teknologi biometrik untuk memastikan transaksi yang aman, efisien, dan
                           terkontrol di lingkungan pemasyarakatan.</p>
                       </div>
@@ -151,54 +141,45 @@ export default function Product() {
             
                   
           </div>
+        <div>
+        <hr className="md:hidden border-t border-gray-300 my-14 mx-4" />
           <div 
-                    id="stories"
-                    className="
-                      flex flex-col 
-                      justify-center
-                      gap-6
-                      text-[#002453]
-                      my-32
-                      w-full
-                      "
-                    >
-          
-                    <h1 className="
-                      px-3 
-                      font-bold text-[#3D3D3D] text-700 text-xl md:text-3xl
-                      
-                      mx-auto">
-                        Keunggulan Kami
-                    </h1>
-                    <div className="
-                    flex justify-center align-center mt-10 w-full
-                    ">
-                      {/* Img */}
-                      <div className="hidden md:flex w-full lg:w-3/12 mx-10 lg:mx-20 relative">
-                        <Image 
-                          src={Stories} 
-                          alt="Palapa" 
-                          fill 
-                          className="rounded-xl shadow-lg object-cover shadow-gray-400/50"
-                        />
-                      </div>
-                      {/* Lists */}
-                      <div className="space-y-6 max-w-2xl w-6/12 mx-4 md:mr-8">
-                      {features.map((feature, index) => (
-                        <div key={index} className="flex items-start gap-4">
-                          <div className="w-18 h-18 p-2 bg-[#E7F0FD] rounded-full flex items-center justify-center text-center shrink-0">
-                            <feature.Icon className="text-blue-500 text-lg md:text-xl" />
-                          </div>
-          
-                          <div>
-                            <h3 className="font-bold text-2xl text-[#3D3D3D]">{feature.title}</h3>
-                            <p className="my-2 md:my-0 font-normal text-base md:text-base text-[#3D3D3D]">{feature.description}</p>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                    </div>
+            id="stories"
+            className="
+              flex flex-col 
+              justify-center
+              gap-6
+              text-[#002453]
+              my-32"
+            >
+
+            <h1 className="
+              px-3 
+              font-bold text-[#3D3D3D] text-700 text-4xl
+              
+              mx-auto">
+                Keunggulan Kami
+            </h1>
+            <div className="
+            flex justify-center align-start mt-10 w-full
+            ">
+              <div className="space-y-6 max-w-5xl w-full mx-4 md:mr-8">
+              {features.map((feature, index) => (
+                <div key={index} className="flex items-start gap-4">
+                  <div className="w-18 h-18 p-2 bg-[#E7F0FD] rounded-full flex items-center justify-center text-center shrink-0">
+                    <feature.Icon className="text-blue-500 text-3xl" />
                   </div>
+
+                  <div className="flex flex-col gap-1">
+                    <h3 className="font-bold text-2xl text-[#3D3D3D]">{feature.title}</h3>
+                    <p className="my-2 md:my-0 font-normal text-base md:text-lg text-[#3D3D3D]">{feature.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            </div>
+        </div>
+      </div>
         </div>
         <Footer />
 

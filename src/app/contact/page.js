@@ -18,32 +18,32 @@ export default function Contact() {
         <Navbar/>
 
         
-          {/* content */}
-          <section className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 min-h-[400px]" id='contact'>
+    {/* content */}
+    <section className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 min-h-[400px]" id='contact'>
         
     {/* Bagian Kiri - Informasi Kontak */}
-    <div className="flex flex-col gap-4 h-full flex-1">
+    <div className="flex flex-col gap-5 h-full flex-1">
       <div className="flex w-auto">
         <p className="text-[#639DF7] max-w-max px-4 bg-[#E7F0FD] text-center rounded-xl py-2">
           Contact Us
         </p>
       </div>
-      <h2 className="text-3xl font-semibold text-black text-left">
+      <h2 className="text-4xl font-semibold text-black text-left">
         Hubungi Kami
       </h2>
       <div className='flex'> 
-            <RiBuildingFill className="text-[#3882F5] text-xl shrink-0 mr-4" />
-            <p className="text-gray-700 text-md">GRAHA PASOPATI NUSANTARA</p>
+            <RiBuildingFill className="text-[#3882F5] text-2xl shrink-0 mr-4" />
+            <p className="text-gray-700 text-base">GRAHA PASOPATI NUSANTARA</p>
         </div>
       <div className='flex w-4/5'> 
-        <RiMapPin2Fill className="text-[#3882F5] text-xl shrink-0 mr-4" />
-        <p className="text-gray-700 text-md">
+        <RiMapPin2Fill className="text-[#3882F5] text-2xl shrink-0 mr-4" />
+        <p className="text-gray-700 text-base">
             Jl.Raya Gempol Kavling II No.19, RT.006/002, Gempol Kel, Ceger, Kec. Cipayung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13820
         </p>
       </div>
         <div className='flex'> 
-            <RiPhoneFill className="text-[#3882F5] text-xl shrink-0 mr-4" />
-            <p className="text-gray-700 text-md">021 87785666</p>
+            <RiPhoneFill className="text-[#3882F5] text-2xl shrink-0 mr-4" />
+            <p className="text-gray-700 text-base">021 87785666</p>
         </div>
 
       {/* Card Kontak - Dibuat Sejajar */}

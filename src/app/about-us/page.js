@@ -78,19 +78,9 @@ export default function AboutUs() {
               text-[#002453]"
             >
 
-              <h3 className="
-              w-fit
-              mx-auto
-              px-4 py-2
-              rounded-xl
-              bg-[#E7F0FD]
-              text-[#639DF7] text-base font-medium">
-                Our Stories
-              </h3>
-
               <h1 className="
               px-3 
-              font-bold text-[#3D3D3D] text-700 text-3xl md:text-3xl
+              font-bold text-[#3D3D3D] text-700 text-4xl
               
               mx-auto">
                 Tentang Kami
@@ -138,21 +128,9 @@ export default function AboutUs() {
         {/* Hasil dan Kerjaasama */}
         <div className="
             mr-6 md:mx-14 lg:mx-40 mt-24">
-          <h3 className="
-            hidden
-            md:flex
-            w-fit
-            mt-6
-            px-4 py-2
-            rounded-xl
-            bg-[#E7F0FD]
-            text-[#639DF7] text-base font-medium">
-              Results & Collaboration
-          </h3>
           <h1 className="
-              font-bold text-[#3D3D3D] text-700 text-3xl
-              hidden
-              md:flex
+              font-bold text-[#3D3D3D] text-700 text-4xl
+              flex
               my-6
               mx-auto">
                 Hasil & Kerjasama
@@ -184,17 +162,8 @@ export default function AboutUs() {
 
         {/* VISI MISII */}
         <div className="py-24 md:px-28 lg:px-40 md:bg-[#F1F6FE] mt-40 flex flex-col justify-center">
-          <h3 className="
-            w-fit
-            mx-auto
-            px-4 py-2
-            rounded-xl
-            bg-[#E7F0FD]
-            text-[#639DF7] text-base font-medium">
-              Visi & Mission
-          </h3>
           <h1 className="
-              font-bold text-[#3D3D3D] text-700 text-2xl md:text-4xl
+              font-bold text-[#3D3D3D] text-700 text-4xl
               my-6
               mb-10 md:mb-6
               mx-auto">

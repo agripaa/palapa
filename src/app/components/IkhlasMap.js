@@ -98,14 +98,9 @@ const IkhlasDisplay = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   console.log(hoveredIndex)
   return (
-    <section className="py-16 px-6">
+    <section className="pb-16 px-6">
       <div className="max-w-[1440px] mx-auto text-center">
         <div className='w-full md:w-9/12 mx-auto'>
-            <div className='flex justify-center w-full'>
-              <p className="text-[#639DF7] max-w-max px-4 bg-[#E7F0FD] text-center font-medium rounded-md py-2">
-                Company Values
-              </p>
-            </div>
             <h2 className="text-[2.5rem] font-semibold mt-2 text-black">
               Nilai – Nilai Perusahaan
             </h2>

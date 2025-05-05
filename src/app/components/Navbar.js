@@ -20,13 +20,13 @@ const Navbar = () => {
         </div>
 
         {/* Navbar Links */}
-        <div className="flex items-center space-x-4 lg:space-x-8 font-normal text-base lg:text-base">
+        <div className="flex items-center font-normal text-base lg:text-base">
           <Link
             href="/"
             className={`
               text-[#616161] text-center
               py-2 
-              px-4 lg:px-6 
+              px-5
               rounded-tl-[30px] 
               rounded-tr-[10px] 
               rounded-bl-[10px] 
@@ -43,7 +43,7 @@ const Navbar = () => {
             className={`
               text-[#616161] text-center 
               py-2 
-              px-4 lg:px-6 
+              px-5
               rounded-tl-[30px] 
               rounded-tr-[10px] 
               rounded-bl-[10px] 
@@ -61,7 +61,7 @@ const Navbar = () => {
             className={`
               text-[#616161] text-center 
               py-2 
-              px-4 lg:px-6 
+              px-5
               rounded-tl-[30px] 
               rounded-tr-[10px] 
               rounded-bl-[10px] 
@@ -79,7 +79,7 @@ const Navbar = () => {
             className={`
               text-[#616161] text-center 
               py-2 
-              px-4 lg:px-6 
+              px-5
               rounded-tl-[30px] 
               rounded-tr-[10px] 
               rounded-bl-[10px] 
@@ -96,7 +96,7 @@ const Navbar = () => {
           {/* Tombol "Hubungi Kami" */}
           <a
             href="/contact"
-            className={`bg-blue-500 text-white font-normal px-6 py-2 rounded-lg flex items-center hover:text-gray-200 transition-all duration-300`}
+            className={`bg-blue-500 text-white font-normal px-6 py-2 rounded-lg ml-2 flex items-center hover:text-gray-200 transition-all duration-300`}
           >
             Hubungi Kita
           </a>

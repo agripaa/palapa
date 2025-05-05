@@ -60,7 +60,7 @@ export default function Home() {
       <Navbar/>
 
       {/* HERO SECTION */}
-      <div className="flex flex-col mx-5 md:mx-10 md:h-screen justify-center items-start md:items-center mt-12">
+      <div className="flex flex-col mx-5 md:mx-10 md:h-screen justify-center items-start md:items-center mt-12 lg:mt-24">
         <div 
         className="
           flex flex-col 
@@ -76,20 +76,20 @@ export default function Home() {
           px-4 py-1 md:py-2
           rounded-md md:rounded-xl
           bg-[#E7F0FD]
-          text-[#639DF7] text-[10px] sm:text-sm font-medium">
+          text-[#639DF7] text-base font-medium">
             PT. PALAPA TEKNOLOGI
           </h3>
 
           <h1 className="
           px-0 md:px-6 lg:px-10 xl:px-10 
-          font-semibold text-[#3D3D3D] text-700 text-2xl sm:text-xl md:text-4xl lg:text-5xl md:text-center
+          font-semibold text-[#3D3D3D] text-700 text-4xl lg:text-5xl md:text-center
           w-4/5 md:w-3/4 xl:w-1/2
           md:mx-auto
           ">
             Sarana Telekomunikasi Legal Pemasyarakatan
           </h1>
           <p className="font-normal 
-          text-sm md:text-lg text-left md:text-center text-[#3D3D3D]
+          text-base md:text-lg text-left md:text-center text-[#3D3D3D]
           w-full md:w-4/5 lg:w-2/4 xl:w-3/5
           mt-5 mx-auto
           ">
@@ -101,9 +101,9 @@ export default function Home() {
           </p>
           <Link href="#stories"
               className="
-              bg-[#186CE1] text-white font-normal text-center text-sm
+              bg-[#186CE1] text-white font-normal text-center text-base
               mt-5 md:mt-0
-              px-6 py-3 md:px-8 md:py-3 lg:py-2
+              px-6 py-3 md:px-8 md:py-4
               w-fit
               mx-auto
               rounded-xl
@@ -118,7 +118,7 @@ export default function Home() {
           </div>
 
           {/* Image 2 */}
-          <div className="absolute top-0 left-[20%] w-[200px] h-[300px] lg:w-[240px] md:h-[340px]">
+          <div className="absolute top-6 left-[20%] w-[200px] h-[300px] lg:w-[240px] md:h-[340px]">
             <Image src={hero2} alt="Placeholder Image 2" layout="fill" className="object-cover rounded-xl shadow-lg shadow-gray-400/50" />
           </div>
 
@@ -128,7 +128,7 @@ export default function Home() {
           </div>
 
           {/* Image 4 */}
-          <div className="absolute top-0 right-[20%] w-[200px] h-[300px] lg:w-[240px] md:h-[340px]">
+          <div className="absolute top-6 right-[20%] w-[200px] h-[300px] lg:w-[240px] md:h-[340px]">
             <Image src={hero4} alt="Placeholder Image 4" layout="fill" className="object-cover rounded-xl shadow-lg shadow-gray-400/50" />
           </div>
         </div>
@@ -148,16 +148,16 @@ export default function Home() {
 
           <h1 className="
             px-3 
-            font-bold text-[#3D3D3D] text-700 text-xl md:text-3xl
+            font-bold text-[#3D3D3D] text-700 text-4xl
             
             mx-auto">
               Keunggulan Kami
           </h1>
           <div className="
-          flex justify-center align-center mt-10 w-full
+          flex justify-center align-start mt-10 w-full
           ">
             {/* Img */}
-            <div className="hidden md:flex w-full lg:w-3/12 mx-10 lg:mx-20 relative">
+            <div className="hidden lg:flex w-full lg:w-4/12 mx-10 lg:mx-20 relative">
               <Image 
                 src={Stories} 
                 alt="Palapa" 
@@ -166,16 +166,16 @@ export default function Home() {
               />
             </div>
             {/* Lists */}
-            <div className="space-y-6 max-w-2xl w-6/12 mx-4 md:mr-8">
+            <div className="space-y-6 max-w-2xl w-full lg:w-6/12 mx-4 md:mr-8">
             {features.map((feature, index) => (
               <div key={index} className="flex items-start gap-4">
                 <div className="w-18 h-18 p-2 bg-[#E7F0FD] rounded-full flex items-center justify-center text-center shrink-0">
-                  <feature.Icon className="text-blue-500 text-lg md:text-xl" />
+                  <feature.Icon className="text-blue-500 text-3xl" />
                 </div>
 
-                <div>
+                <div className="flex flex-col gap-1">
                   <h3 className="font-bold text-2xl text-[#3D3D3D]">{feature.title}</h3>
-                  <p className="my-2 md:my-0 font-normal text-base md:text-base text-[#3D3D3D]">{feature.description}</p>
+                  <p className="my-2 md:my-0 font-normal text-base md:text-lg text-[#3D3D3D]">{feature.description}</p>
                 </div>
               </div>
             ))}
@@ -195,26 +195,15 @@ export default function Home() {
             mt-20 md:mt-40 mb-32"
           >
 
-          <h3 className="
-            w-fit
-            mx-auto
-            px-6 py-3
-            rounded-lg
-            bg-[#E7F0FD]
-            text-[#639DF7] text-sm font-medium">
-              Client Kami
-          </h3>
-
           <h1 className="
-            px-3 
-            font-bold text-[#3D3D3D] text-700 text-xl md:text-3xl
-            
+            p-3 
+            font-bold text-[#3D3D3D] text-700 text-4xl
             mx-auto">
               Client Kebanggan Kami
           </h1>
-          <div className="flex justify-around gap-5 md:gap-20 mx-auto mt-6">
-            <Image src={Client_Kementrian} alt="Logo Kementrian" className="w-36 h-36 md:h-56 md:w-56" />
-            <Image src={Client_Lapas} alt="Logo Lapas" className="w-40 h-40 md:h-64 md:w-64"/>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-5 md:gap-20 mx-auto mt-6">
+            <Image src={Client_Kementrian} alt="Logo Kementrian" className="h-[220px] w-[220px]" />
+            <Image src={Client_Lapas} alt="Logo Lapas" className="h-64 w-64"/>
           </div>
 
         </div>
