@@ -199,7 +199,7 @@ export default function Partner() {
 
             <div className="grid grid-cols-2 gap-8 font-semibold text-[#3D3D3D] mb-8 text-base">
               <span>Nama Lapas</span>
-              <span>Nama Kota</span>
+              <span>Provinsi</span>
             </div>
 
             <div className="space-y-2 text-base text-[#3D3D3D] border-t pt-6">

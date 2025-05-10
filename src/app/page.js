@@ -72,7 +72,7 @@ export default function Home() {
 
           <h3 className="
           w-fit
-          mx-none sm:mx-10 md:mx-auto
+          mx-none md:mx-auto
           px-4 py-1 md:py-2
           rounded-md md:rounded-xl
           bg-[#E7F0FD]

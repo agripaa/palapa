@@ -14,7 +14,7 @@ export default function Contact() {
       <div id="heroSection" className="w-full font-inter overflow-hidden">
         
         
-        <div className="flex flex-col gap-2 md:h-screen justify-center ">
+        <div className="flex flex-col gap-2 mt-40 py-20 justify-center ">
         <Navbar/>
 
         
@@ -23,11 +23,6 @@ export default function Contact() {
         
     {/* Bagian Kiri - Informasi Kontak */}
     <div className="flex flex-col gap-5 h-full flex-1">
-      <div className="flex w-auto">
-        <p className="text-[#639DF7] max-w-max px-4 bg-[#E7F0FD] text-center rounded-xl py-2">
-          Contact Us
-        </p>
-      </div>
       <h2 className="text-4xl font-semibold text-black text-left">
         Hubungi Kami
       </h2>
@@ -56,7 +51,7 @@ export default function Contact() {
             </div>
             <div className='flex flex-col'>
               <h3 className="text-md font-semibold text-black">Nomor Telepon</h3>
-              <p className="text-gray-700 text-sm mt-1">+62-822-1144-9515</p>
+              <p className="text-gray-700 text-sm mt-1">+62 812-1234-8615</p>
             </div>
           </div>
           <button className="mt-auto text-black bg-[#E7F0FD] px-4 py-2 rounded-xl w-full">

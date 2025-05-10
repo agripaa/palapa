@@ -43,10 +43,10 @@ export default function Footer() {
             <div className="mt-5 flex flex-col gap-2">
               <h2 className="text-xl font-semibold">Alamat</h2>
               <p className="md:text-base text-md font-regular">
-                Jl. Raya Gempol Kavling I No.19, RT.006/002, Gempol Kel, Ceger, Kec. Cipayung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13820
+                Jl.Raya Gempol Kavling II No.19, RT.006/002, Gempol Kel, Ceger, Kec. Cipayung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13820
               </p>
               <h2 className="text-xl font-semibold">Nomor Whatsapp</h2>
-              <p className="md:text-base text-md font-regular">+62-822-1144-9515</p>
+              <p className="md:text-base text-md font-regular">+62 812-1234-8615</p>
               <h2 className="text-xl font-semibold">Nomor Telepon</h2>
               <p className="md:text-base text-md font-regular">021 38853070</p>
             </div>
@@ -74,15 +74,17 @@ export default function Footer() {
           <div className="w-full md:w-1/4">
             <h1 className="text-xl font-bold">Umum</h1>
             <div className="mt-5 space-y-4">
-              <Link href="/" className="md:text-base text-md flex items-center gap-3">
+              <Link href="/about-us" className="md:text-base text-md flex items-center gap-3">
                 Tentang Kami
               </Link>
-              <Link href="/" className="md:text-base text-md flex items-center gap-3">
+              <Link href="/product" className="md:text-base text-md flex items-center gap-3">
                 Produk Kami
               </Link>
+              <Link href="/partner" className="md:text-base text-md flex items-center gap-3">
+                Partner Kami
+              </Link>
               <Link
-                href="https://docs.google.com/forms/d/1t9Ti-EZBO0ZCHwvaj0lTfmI8yO-sibZV2DZXm10fpK8/edit"
-                target="_blank"
+                href="/contact"
                 className="md:text-base text-md flex items-center gap-3"
               >
                 Kontak Kami

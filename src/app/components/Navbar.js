@@ -1,152 +1,80 @@
 "use client";
-
+import React from "react";
 import Link from 'next/link';
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import Logo from "@/app/assets/Logo.png";
-import { FiInfo, FiShoppingBag, FiPhone } from "react-icons/fi"; 
-import { RiParentLine, RiHome2Line} from "react-icons/ri";
+import { RiHome2Line, RiInformationLine, RiShoppingBag3Line, RiGroupLine, RiPhoneLine } from "react-icons/ri";
+import Logo from "@/app/assets/Logo-resize.png";
 
 const Navbar = () => {
   const pathname = usePathname();
 
+  // Daftar menu navbar
+  const navLinks = [
+    { href: "/", label: "Home", icon: <RiHome2Line size={24} /> },
+    { href: "/about-us", label: "Tentang Kami", icon: <RiInformationLine size={24} /> },
+    { href: "/product", label: "Produk Kami", icon: <RiShoppingBag3Line size={24} /> },
+    { href: "/partner", label: "Partner Kami", icon: <RiGroupLine size={24} /> },
+  ];
+
   return (
-    <>
-      {/* Navbar Desktop */}
-      <nav className="fixed top-0 z-50 w-full justify-between items-center px-10 lg:px-20 py-2 xl:py-1 bg-white hidden md:flex">
-        {/* Logo */}
-        <div className="text-md font-bold flex items-center">
-          <Image src={Logo} className="navLogo" width={120} height={120} alt="Palapa" />
-        </div>
+    <nav className="fixed bottom-0 md:top-0 left-0 w-full shadow-md z-50 pointer-events-none">
+      <div className="bg-white shadow-md pointer-events-auto">
+        <div className="max-w-[1440px] mx-auto flex justify-between items-center py-4 px-6">
+          {/* Logo hanya tampil di desktop */}
+          <Image src={Logo} alt="logo" className="hidden md:block w-[120px]" />
 
-        {/* Navbar Links */}
-        <div className="flex items-center font-normal text-base lg:text-base">
-          <Link
-            href="/"
-            className={`
-              text-[#616161] text-center
-              py-2 
-              px-5
-              rounded-tl-[30px] 
-              rounded-tr-[10px] 
-              rounded-bl-[10px] 
-              rounded-br-[30px] 
-              w-auto 
-              hover:text-blue-500 transition-all duration-300 ${
-                pathname === "/" ? "border-2 border-[#5091EC] font-medium" : ""
-              }`}
-          >
-            Home
-          </Link>
-          <Link
-            href="/about-us"
-            className={`
-              text-[#616161] text-center 
-              py-2 
-              px-5
-              rounded-tl-[30px] 
-              rounded-tr-[10px] 
-              rounded-bl-[10px] 
-              rounded-br-[30px] 
-              w-auto 
-              hover:text-blue-500 transition-all duration-300
-              ${
-                pathname === "/about-us" ? "border-2 border-[#5091EC] font-semibold" : ""
-              }`}
-          >
-            Tentang Kami
-          </Link>
-          <a
-            href="/product"
-            className={`
-              text-[#616161] text-center 
-              py-2 
-              px-5
-              rounded-tl-[30px] 
-              rounded-tr-[10px] 
-              rounded-bl-[10px] 
-              rounded-br-[30px] 
-              w-auto 
-              hover:text-blue-500 transition-all duration-300
-              ${
-                pathname === "/product" ? "border-2 border-[#5091EC] font-semibold" : ""
-              }`}
-          >
-            Produk Kami
-          </a>
-          <a
-            href="/partner"
-            className={`
-              text-[#616161] text-center 
-              py-2 
-              px-5
-              rounded-tl-[30px] 
-              rounded-tr-[10px] 
-              rounded-bl-[10px] 
-              rounded-br-[30px] 
-              w-auto 
-              hover:text-blue-500 transition-all duration-300
-              ${
-                pathname === "/partner" ? "border-2 border-[#5091EC] font-semibold" : ""
-              }`}
-          >
-            Partner Kami
-          </a>
-
-          {/* Tombol "Hubungi Kami" */}
-          <a
-            href="/contact"
-            className={`bg-blue-500 text-white font-normal px-6 py-2 rounded-lg ml-2 flex items-center hover:text-gray-200 transition-all duration-300`}
-          >
-            Hubungi Kita
-          </a>
+          {/* Navbar Desktop */}
+          <ul className="hidden md:flex space-x-6">
+            {navLinks.map((link) => (
+              <li key={link.href} className="relative group">
+                <Link
+                  href={link.href}
+                  className={`font-medium text-[#616161] hover:text-gray-700 transition-all duration-300 md:text-sm lg:text-base ${pathname === link.href ? "text-black font-semibold" : ""}`}
+                >
+                  {link.label}
+                </Link>
+                <span
+                  className={`absolute bottom-0 left-0 h-[2px] bg-blue-500 transition-all duration-300 ${pathname === link.href ? "w-full" : "w-0"} group-hover:w-full`}
+                ></span>
+              </li>
+            ))}
+            <li>
+              <Link
+                href="/contact"
+                className="text-white bg-blue-500 px-4 py-3 rounded-xl font-medium transition-all duration-300 hover:bg-blue-600"
+              >
+                Hubungi Kami
+              </Link>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
 
       {/* Navbar Mobile */}
-      <div className="md:hidden mb-10 bg-white w-full p-2 md:px-6">
-      <Image src={Logo} className="navLogo" width={100} height={100} alt="Palapa" />
-      </div>
-      <nav className="md:hidden fixed bottom-0 left-0 w-full bg-white shadow-t-md py-2 flex justify-around items-center z-50 border-t">
-        <Link
-          href="/"
-          className={`flex flex-col items-center text-gray-600`}
-        >
-          <RiHome2Line className="text-2xl" />
-          <span className="text-xs">Beranda</span>
-        </Link>
-        <a
-          href="/about-us"
-          className={`flex flex-col items-center text-gray-600`}
-        >
-          <FiInfo className="text-2xl" />
-          <span className="text-xs">Tentang</span>
-        </a>
-        <a
-          href="/product"
-          className={`flex flex-col items-center text-gray-600`}
-        >
-          <FiShoppingBag className="text-2xl" />
-          <span className="text-xs">Produk</span>
-        </a>
-
-        <a
-          href="/partner"
-          className={`flex flex-col items-center text-gray-600`}
-        >
-          <RiParentLine className="text-2xl" />
-          <span className="text-xs">Partner</span>
-        </a>
-        
-        <Link
-          href="/#contact-us"
-          className={`flex flex-col items-center text-gray-600`}
-        >
-          <FiPhone className="text-2xl" />
-          <span className="text-xs">Hubungi</span>
-        </Link>
-      </nav>
-    </>
+      <ul className="flex md:hidden justify-around items-center bg-white shadow-lg py-3 fixed bottom-0 w-full pointer-events-auto">
+        {navLinks.map((link) => (
+          <li key={link.href}>
+            <Link
+              href={link.href}
+              className={`flex flex-col items-center text-[#616161] hover:text-gray-700 transition-all duration-300 ${pathname === link.href ? "text-black font-semibold" : ""}`}
+            >
+              {link.icon}
+              <span className="text-xs mt-1">{link.label}</span>
+            </Link>
+          </li>
+        ))}
+        <li>
+          <Link
+            href="/contact"
+            className="flex flex-col items-center text-white bg-blue-500 px-4 py-2 rounded-xl font-medium transition-all duration-300 hover:bg-blue-600"
+          >
+            <RiPhoneLine size={24} />
+            <span className="text-xs mt-1">Hubungi</span>
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 };
 

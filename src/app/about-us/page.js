@@ -212,8 +212,8 @@ export default function AboutUs() {
         </div>
 
         {/* Company Values */}
-        <div className="hidden
-            md:mx-14 lg:mx-40 mt-24 md:flex flex-col gap-6">
+        <div className="
+            md:mx-14 lg:mx-40 mt-24 flex flex-col gap-6">
 
           <IkhlasDisplay />
         </div>

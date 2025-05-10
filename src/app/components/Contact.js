@@ -7,8 +7,8 @@ export default function ContactSection() {
       <div className="w-full grid grid-cols-1 md:grid-cols-2 bg-[#F2F6FC] md:bg-white rounded-[2rem] shadow-lg mt-2 md:mt-6 mb-2 md:mb-6 overflow-hidden">
         {/* Bagian Kiri: Informasi Kontak */}
         <div className="text-[#000000] p-6 md:pr-1 md:pl-8 lg:pl-10 xl:pl-14 md:py-6 lg:py-10">
-          <h2 className="text-[#2E312D] text-xl md:text-xl lg:text-2xl xl:text-2xl text-center md:text-left xl:text-3xl md:pl-6 xl:pl-7 font-bold text-gray-900">Hubungi Kami</h2>
-          <p className="text-gray-600 mt-3 text-sm md:text-[10px] lg:text-[13px] xl:text-lg mt-2 xl:mt-4 md:pl-6 xl:pl-7 hidden md:block">Silahkan hubungi kami untuk informasi lebih lanjut</p>
+          <h2 className="text-[#2E312D] text-xl md:text-xl lg:text-2xl text-center md:text-left xl:text-3xl md:pl-6 xl:pl-7 font-bold">Hubungi Kami</h2>
+          <p className="text-gray-600 mt-3 text-sm md:text-[10px] lg:text-[13px] xl:text-lg xl:mt-4 md:pl-6 xl:pl-7 hidden md:block">Silahkan hubungi kami untuk informasi lebih lanjut</p>
 
           <div className="mt-3 space-y-4 text-[12px] md:text-[10px] lg:text-[13px] xl:text-[14px]">
             {/* Alamat */}
@@ -24,7 +24,7 @@ export default function ContactSection() {
               <FaPhoneAlt className="text-[#4B5563] w-4 h-4 xl:w-5 xl:h-5" />
               <div>
                 <p className="text-[#000000]"><strong>Telepon</strong></p>
-                <p className="text-[#000000] mt-1">0821-3865-3070</p>
+                <p className="text-[#000000] mt-1">0812-1234-8615</p>
               </div>  
             </div>
 
@@ -56,7 +56,7 @@ export default function ContactSection() {
           </div>
 
           {/* Tombol CTA */}
-          <div className="mt-3 flex space-x-8 lg:space-x-24 xl:space-x-32 pl-7 hidden md:flex">
+          <div className="mt-3 flex space-x-8 lg:space-x-24 xl:space-x-32 pl-7 md:flex">
             <a href="https://wa.me/081212348615" target="_blank" rel="noopener noreferrer" className="bg-blue-500 text-white px-4 py-2 xl:py-2 rounded-lg text-[8px] md:text-[8px] lg:text-[10px] xl:text-[13px] font-normal shadow-md hover:bg-blue-600">
               Chat Via Whatsapp
             </a>
