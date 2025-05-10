@@ -183,7 +183,7 @@ export default function Partner() {
                 }}
                 className="text-base text-gray-700 bg-[#F1F6FE] rounded-xl px-4 py-2 shadow-sm cursor-pointer w-1/2 lg:w-1/3"
               >
-                <option value="">Lokasi</option>
+                <option value="">Provinsi</option>
                 {Object.keys(cityData).map((region) => (
                   <option key={region} value={region}>
                     {region}
@@ -199,7 +199,7 @@ export default function Partner() {
 
             <div className="grid grid-cols-2 gap-8 font-semibold text-[#3D3D3D] mb-8 text-base">
               <span>Nama Lapas</span>
-              <span>Provinsi</span>
+              <span>Nama Provinsi</span>
             </div>
 
             <div className="space-y-2 text-base text-[#3D3D3D] border-t pt-6">
