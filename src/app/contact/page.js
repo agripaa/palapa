@@ -33,7 +33,7 @@ export default function Contact() {
       <div className='flex w-4/5'> 
         <RiMapPin2Fill className="text-[#3882F5] text-2xl shrink-0 mr-4" />
         <p className="text-gray-700 text-base">
-            Jl.Raya Gempol Kavling II No.19, RT.006/002, Gempol Kel, Ceger, Kec. Cipayung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13820
+            Jl.Raya Gempol Kavling II Gempol Kel, Ceger, Kec. Cipayung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13820
         </p>
       </div>
         <div className='flex'> 

@@ -161,10 +161,9 @@ export default function AboutUs() {
         </div>
 
         {/* VISI MISII */}
-        <div className="py-24 md:px-28 lg:px-40 md:bg-[#F1F6FE] mt-40 flex flex-col justify-center">
+        <div className="pb-12 md:px-28 lg:px-40 md:bg-[#F1F6FE] mt-40 flex flex-col justify-center">
           <h1 className="
               font-bold text-[#3D3D3D] text-700 text-4xl
-              my-6
               mb-10 md:mb-6
               mx-auto">
                 Visi & Misi Kami
