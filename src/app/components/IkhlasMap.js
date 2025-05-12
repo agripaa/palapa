@@ -108,7 +108,7 @@ const IkhlasDisplay = () => {
                 PT Palapa Teknologi menjunjung tinggi nilai-nilai yang menjadi landasan dalam setiap kegiatan dan
                 keputusan bisnis perusahaan. Nilai-nilai ini tidak hanya menjadi pedoman dalam berinteraksi dengan
                 klien dan mitra, tetapi juga dalam membangun budaya perusahaan yang sehat dan produktif. Berikut
-                adalah nilai-nilai yang dipegang teguh oleh PT Pasopati Nusantara:
+                adalah nilai-nilai yang dipegang teguh oleh PT Palapa Teknologi:
             </p>
           </div>
 
