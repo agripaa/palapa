@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 import React from 'react';
-import { RiMapPin2Fill, RiWhatsappLine, RiMailCheckLine, RiPhoneFill } from 'react-icons/ri';
+import { RiMapPin2Fill, RiWhatsappLine, RiMailCheckLine } from 'react-icons/ri';
 import { RiBuildingFill } from "react-icons/ri";
 
 export default function Contact() {
