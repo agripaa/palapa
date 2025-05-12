@@ -193,15 +193,15 @@ export default function AboutUs() {
                 <ul className="space-y-4 mt-2">
                 <li className="flex items-center md:items-start gap-2">
                   <RiCheckboxCircleFill className="text-[#3882F5] bg-[#E7F0FD] rounded-full p-1 w-7 h-7 shrink-0" />
-                  <span className="text-base text-[#0A2E61] md:mt-1 xl:mt-0">Menjadi solusi teknologi informasi dan komunikasi bagi lingkungan tertutup/terbatas.</span>
+                  <span className="text-base text-[#3D3D3D] md:mt-1 xl:mt-0">Menjadi solusi teknologi informasi dan komunikasi bagi lingkungan tertutup/terbatas.</span>
                 </li>
                 <li className="flex items-center md:items-start gap-2">
                   <RiCheckboxCircleFill className="text-[#3882F5] bg-[#E7F0FD] rounded-full p-1 w-7 h-7 shrink-0" />
-                  <span className="text-base text-[#0A2E61] md:mt-1 xl:mt-0">Mewujudkan sistem terintegrasi dengan pelayanan terbaik</span>
+                  <span className="text-base text-[#3D3D3D] md:mt-1 xl:mt-0">Mewujudkan sistem terintegrasi dengan pelayanan terbaik</span>
                 </li>
                 <li className="flex items-center md:items-start gap-2">
                   <RiCheckboxCircleFill className="text-[#3882F5] bg-[#E7F0FD] rounded-full p-1 w-7 h-7 shrink-0" />
-                  <span className="text-base text-[#0A2E61] md:mt-1 xl:mt-0">Menghadirkan teknologi informasi dan komunikasi dengan inovasi yang unggul</span>
+                  <span className="text-base text-[#3D3D3D] md:mt-1 xl:mt-0">Menghadirkan teknologi informasi dan komunikasi dengan inovasi yang unggul</span>
                 </li>
               </ul>
               </div>

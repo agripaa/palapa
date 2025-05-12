@@ -42,9 +42,11 @@ export default function Footer() {
             />
             <div className="mt-5 flex flex-col gap-2">
               <h2 className="text-xl font-semibold">Alamat</h2>
-              <p className="md:text-base text-md font-regular">
-                Jl.Raya Gempol Kavling II Gempol Kel, Ceger, Kec. Cipayung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13820
-              </p>
+                            <span className="flex flex-col tracking-[0.0025em]">
+          <p className="text-gray-700 text-base">Jl.Raya Gempol Kavling II</p>
+          <p className="text-gray-700 text-base">Gempol Kel, Ceger, Kec. Cipayung,</p>
+          <p className="text-gray-700 text-base">Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13820</p>
+        </span>
               <h2 className="text-xl font-semibold">Nomor Whatsapp</h2>
               <p className="md:text-base text-md font-regular">+62 812-1234-8615</p>
               <h2 className="text-xl font-semibold">Nomor Telepon</h2>
