@@ -105,10 +105,10 @@ const IkhlasDisplay = () => {
               Nilai – Nilai Perusahaan
             </h2>
             <p className='text-center md:text-left mt-2'>
-                PT Palapa Teknologi menjunjung tinggi nilai-nilai yang menjadi landasan dalam setiap kegiatan dan
-                keputusan bisnis perusahaan. Nilai-nilai ini tidak hanya menjadi pedoman dalam berinteraksi dengan
-                klien dan mitra, tetapi juga dalam membangun budaya perusahaan yang sehat dan produktif. Berikut
-                adalah nilai-nilai yang dipegang teguh oleh PT Palapa Teknologi:
+            PT Palapa Teknologi Indonesia adalah perusahaan yang berkomitmen untuk menjadi pemimpin
+            dalam bidang teknologi informasi dan solusi digital di Indonesia. Dengan mengedepankan nilai-nilai
+            IKHLAS dalam setiap aspek operasionalnya, perusahaan ini berusaha untuk menciptakan lingkungan
+            kerja yang profesional, inovatif, dan berkelanjut
             </p>
           </div>
 
