@@ -18,31 +18,31 @@ const features = [
     title: 'Legal',
     Icon: FaCheckCircle,
     description:
-      'Layanan komunikasi ini sah secara hukum dan sesuai regulasi pemerintah, memastikan penggunaan yang aman dan terpantau.',
+      'Iwartelsus merupakan sarana telekomunikasi resmi yang telah memenuhi seluruh ketentuan hukum dan regulasi pemerintah, menjamin keamanan, kepatuhan, dan transparansi dalam penggunaannya di lingkungan pemasyarakatan.',
   },
   {
     title: 'Sistem Prabayar',
     Icon: RiMoneyDollarCircleLine,
     description:
-      'Menggunakan sistem prabayar yang transparan, memungkinkan WBP dan keluarga mengontrol biaya komunikasi dengan mudah.',
+      'Iwartelsus menggunakan sistem Prabayar atau Pulsa Isi Ulang yang disediakan oleh koperasi atau yayasan atau lembaga atau perorangan yang ditunjuk oleh Koperasi Pemasyarakatan dengan nominal harga yang terjangkau dan ekonomis.',
   },
   {
     title: 'Pemantauan Berjenjang',
     Icon: RiStackshareLine,
     description:
-      'Setiap komunikasi diawasi sesuai tingkat keamanan yang ditentukan untuk menjaga ketertiban dan mencegah penyalahgunaan.',
+      'Setiap aktivitas komunikasi terekam dan diawasi melalui sistem berjenjang, mulai dari level operator hingga pimpinan lembaga, guna memastikan pengawasan maksimal dan pencegahan penyalahgunaan.',
   },
   {
     title: 'Pemberdayaan Ekonomi Pemasyarakatan',
     Icon: RiHandCoinLine,
     description:
-      'Mendukung program pemberdayaan dengan membuka peluang bagi WBP untuk kegiatan produktif dan peningkatan keterampilan.',
+      'Pengoperasian dan pengelolaan Iwartelsus dilakukan oleh koperasi Unit Pelaksana Teknis Pemasyarakatan sebagai bentuk dorongan kemandirian guna meningkatkan kesejahteraan Koperasi di lingkungan Unit Teknis Pemasyarakatan.',
   },
   {
     title: 'Non DIPA',
     Icon: RiGroup2Line,
     description:
-      'Layanan ini tidak membebani anggaran negara karena dikelola dengan model bisnis mandiri tanpa menggunakan dana APBN.',
+      'Layanan ini tidak menggunakan anggaran negara (Non DIPA), sehingga tidak membebani APBN dan dapat diimplementasikan secara mandiri oleh lembaga pemasyarakatan melalui skema kerja sama.',
   },
 ];
 
@@ -50,7 +50,7 @@ const features = [
 export default function Product() {
    
     return (
-      <div id="heroSection" className="w-full font-inter ">
+      <div id="heroSection" className="w-full">
         <Navbar/>
         <div className="flex flex-col mx-6 md:mx-10 mt-20 md:mt-36 items-center">
           <div 
@@ -63,7 +63,7 @@ export default function Product() {
 
               <h1 className="
               px-3 
-              font-bold text-[#3D3D3D] text-700 text-4xl
+              font-bold text-[#3D3D3D] text-700 text-5xl md:text-6xl
               text-center
               mx-auto">
                 Solusi Digital Terdepan Untuk<br/>Komunikasi Efektif 
@@ -155,7 +155,7 @@ export default function Product() {
 
             <h1 className="
               px-3 
-              font-bold text-[#3D3D3D] text-700 text-4xl
+              font-bold text-[#3D3D3D] text-700 text-5xl md:text-6xl
               
               mx-auto">
                 Keunggulan Kami
@@ -165,14 +165,14 @@ export default function Product() {
             ">
               <div className="space-y-6 max-w-5xl w-full mx-4 md:mr-8">
               {features.map((feature, index) => (
-                <div key={index} className="flex items-start gap-4">
+                <div key={index} className="flex items-start gap-6">
                   <div className="w-18 h-18 p-2 bg-[#E7F0FD] rounded-full flex items-center justify-center text-center shrink-0">
                     <feature.Icon className="text-blue-500 text-3xl" />
                   </div>
 
                   <div className="flex flex-col gap-1">
-                    <h3 className="font-bold text-2xl text-[#3D3D3D]">{feature.title}</h3>
-                    <p className="my-2 md:my-0 font-normal text-base md:text-lg text-[#3D3D3D]">{feature.description}</p>
+                    <h3 className="font-semibold text-3xl text-[#3D3D3D]">{feature.title}</h3>
+                    <p className="my-2 md:my-0 font-normal text-base md:text-xl text-[#3D3D3D]">{feature.description}</p>
                   </div>
                 </div>
               ))}

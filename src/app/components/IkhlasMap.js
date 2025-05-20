@@ -101,15 +101,9 @@ const IkhlasDisplay = () => {
     <section className="pb-16 px-6">
       <div className="max-w-[1440px] mx-auto text-center">
         <div className='w-full md:w-9/12 mx-auto'>
-            <h2 className="text-[2.5rem] font-semibold mt-2 text-black">
+            <h2 className="text-5xl md:text-6xl font-bold mt-2 text-gray-700">
               Nilai – Nilai Perusahaan
             </h2>
-            <p className='text-center md:text-left mt-2'>
-            PT Palapa Teknologi Indonesia adalah perusahaan yang berkomitmen untuk menjadi pemimpin
-            dalam bidang teknologi informasi dan solusi digital di Indonesia. Dengan mengedepankan nilai-nilai
-            IKHLAS dalam setiap aspek operasionalnya, perusahaan ini berusaha untuk menciptakan lingkungan
-            kerja yang profesional, inovatif, dan berkelanjut
-            </p>
           </div>
 
         {/* Grid untuk huruf dan ikon */}

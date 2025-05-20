@@ -138,7 +138,7 @@ export default function Partner() {
   
 
     return (
-      <div id="heroSection" className="w-full font-inter overflow-hidden">
+      <div id="heroSection" className="w-full overflow-hidden">
         <Navbar/>
         <div className="flex flex-col my-10 md:my-36 xl:mt-32 items-center">
           <div 
@@ -151,8 +151,9 @@ export default function Partner() {
 
               <h1 className="
               px-3 
-              font-bold text-[#3D3D3D] text-700 text-4xl
+              font-bold text-[#3D3D3D] text-700 text-5xl md:text-6xl
               text-center
+              mb-6
               mx-auto">
                 Partner Bisnis Kami
             </h1>

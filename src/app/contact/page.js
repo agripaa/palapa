@@ -11,7 +11,7 @@ import { RiBuildingFill } from "react-icons/ri";
 export default function Contact() {
 
     return (
-      <div id="heroSection" className="w-full font-inter overflow-hidden">
+      <div id="heroSection" className="w-full overflow-hidden">
         
         
         <div className="flex flex-col gap-2 md:mt-40 py-12 md:py-20 justify-center ">
