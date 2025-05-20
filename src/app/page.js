@@ -69,8 +69,8 @@ export default function Home() {
             </p>
           </div>
           <h2 className="text-4xl lg:text-5xl font-semibold text-[#2B313B]">Sarana Telekomunikasi Legal Pemasyarakatan</h2>
-          <p className=" text-[#2B313B] text-base md:text-lg font-light">
-            PT. Palapa Teknologi Indonesia didirikan secara resmi pada 26 September 2005 dan bergerak di bidang perdagangan besar piranti lunak serta layanan teknologi informasi dan komunikasi. Sebagai anak perusahaan dari <span className='font-bold'>PT. Pasopati Nusantara Holding Company</span>, Palapa Teknologi memiliki peran strategis dalam menyediakan solusi telekomunikasi yang aman, legal, dan terintegrasi.
+          <p className=" text-[#2B313B] text-base md:text-xl font-light">
+            <span className='font-semibold text-blue-600'>PT. Palapa Teknologi Indonesia</span> didirikan secara resmi pada 26 September 2005 dan bergerak di bidang perdagangan besar piranti lunak serta layanan teknologi informasi dan komunikasi. Sebagai anak perusahaan dari <span className='font-semibold'>PT. Pasopati Nusantara Holding Company</span>, Palapa Teknologi memiliki peran strategis dalam menyediakan solusi telekomunikasi yang aman, legal, dan terintegrasi.
           </p>
           <div>
             <Link href="#stories" className="mt-0 md:mt-6 bg-[#186CE1] text-white text-base px-6 py-4 rounded-xl font-medium">
