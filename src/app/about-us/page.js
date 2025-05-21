@@ -12,30 +12,30 @@ import { RiRocket2Line, RiFocus2Line, RiCheckboxCircleFill } from "react-icons/r
 
 const partnerships = [
   {
-    title: "Pendirian dan Visi Awal Palapa Teknologi",
+    title: "Pendirian dan Visi Awal",
     year: 2005,
-    description: "PT. Palapa Teknologi Indonesia, anak perusahaan PT. Pasopati Nusantara Holding Company, berdiri sejak 26 September 2005 dan fokus pada layanan teknologi informasi serta perdagangan perangkat lunak. Perusahaan ini menyediakan solusi telekomunikasi yang aman, legal, dan terintegrasi."
+    description: "PT. Palapa Teknologi Indonesia, berdiri sejak 26 September 2005 dan fokus pada layanan teknologi informasi serta perdagangan perangkat lunak. Perusahaan ini menyediakan solusi telekomunikasi yang aman, legal, dan terintegrasi."
   },
   {
-    title: "Petunjuk Pelaksana Wartelsus di Lapas dan Rutan",
+    title: "Penyelenggaraan Wartelsus (Warung Telekomunikasi Khusus)",
     year: 2008,
     description:
-      "Petunjuk Pelaksana Direktur Bina Keamanan dan Ketertiban Direktorat Jenderal Pemasyarakatan No : PAS.6.OT.03,01- 12 Tahun 2008 tentang Penyelenggaraan Telekomunikasi Khusus (Wartelsus0 Pada Lembaga Pemasyarakatan, Rumah Tahanan Negara dan Cabang Rumah Tahanan Negara di Seluruh Indonesia",
+      "Petunjuk Pelaksana Direktur Bina Keamanan dan Ketertiban Direktorat Jenderal Pemasyarakatan No : PAS.6.OT.03,01- 12 Tahun 2008 tentang Penyelenggaraan Telekomunikasi Khusus (Wartelsus) Pada Lembaga Pemasyarakatan, Rumah Tahanan Negara dan Cabang Rumah Tahanan Negara di Seluruh Indonesia",
   },
   {
-    title: "Perjanjian I–Wartelsus Ditjen PAS & PT Palapa",
+    title: "Peningkatan Teknologi dan Informasi Integrasi Wartelsus (I-wartelsus)",
     year: 2012,
     description:
       "Perjanjian Kerjasama antara Direktorat Bina Keamanan dan Ketertiban Direktorat Jenderal Pemasyarakatan dengan PT. Palapa Teknologi Indonesia, nomor : PAS2.DL.02.02.03-249 dan nomor 001/PTI–DTJENPAS/IV /2012, tanggal 05 September 2012 tentang Peningkatan Teknologi Telekomunikasi dan Informasi Integrated Wartelsus (I-Wartelsus) Pada Kantor Pusat Direktorat Jenderal Pemasyarakatan, Divisi Pemasyarakatan dan Unit Pelaksana Teknis Pemasyarakatan di Seluruh Indonesia.",
   },
   {
-    title: "MoU Telekomunikasi Pemasyarakatan Ditjen PAS & PT Palapa",
+    title: "Pembangunan, Penegmbangan dan Pendampingan pemasyarakatan berbasis Teknologi Informasi",
     year: 2016,
     description:
       "Nota Kesepahaman antara Direktorat Jenderal Pemasyarakatan dan PT. Palapa Teknologi Indonesia, nomor PAS-31.HM.05.03 Th 2016 dan nomor PTI-DITJENPAS/MOU/2016/IV-001, tanggal 27 April 2016 tentang Pembangunan, Pengembangan dan Pendampingan Serta Pengaman Sistem Telekomunikasi dalam rangka layanan Pemasyarakatan berbasis Teknologi Informasi.",
   },
   {
-    title: "Perjanjian Optimalisasi i–Wartelsus & IMC PAS",
+    title: "Optimalisasi Iwartelsus dan IMC Pas (Integrated Monitoring Center Pemasyarakatan)",
     year: 2021,
     description:
       "4.	Perjanjian Kerjasama  Antara Direktorat Jenderal Pemasyarakatan Kementrian Hukum dan Hak Asasi Manusia dengan PT. Palapa Teknologi  Indonesia Nomor  PAS-10.HH.05.05 Tahun 2021 dan No 013/PKS-DITJENPAS/IV/2021 tanggal 27 April 2021 tentang Optimalisasi I-Wartelsus dan Pemanfaatan IMC PAS Sebagai Sarana Monitoring dan Deteksi Dini Pemasyarakatan",
@@ -118,7 +118,7 @@ export default function AboutUs() {
                   Palapa Teknologi berfokus pada penyediaan sarana komunikasi yang mendukung kebutuhan Warga Binaan Pemasyarakatan (WBP) di Lembaga Pemasyarakatan (Lapas) dan Rumah Tahanan Negara (Rutan) di seluruh Indonesia. Perusahaan ini berkomitmen untuk mengembangkan layanan berbasis teknologi informasi yang memungkinkan WBP dapat berkomunikasi dengan dunia luar secara sah dan terpantau, sekaligus mendukung keamanan dan pengawasan di lingkungan pemasyarakatan.
                 </p>
                 <h3 className="text-lg mt-8 md:text-xl lg:text-2xl w-full font-semibold text-[#3D3D3D] border-l-2 border-blue-500 pl-2">
-                  Inovasi untuk Efisiensi dan Keamanan Pemasyarakatan
+                  Dukungan pencegahan gangguan keamanan dan ketertiban di lingkungan UPT Pemasyarakatan
                 </h3>
                 <p className="mt-2 md:text-base text-[#3D3D3D] text-justify">
                   Dengan inovasi yang terus berkembang, Palapa Teknologi menjadi mitra penting bagi pemerintah dalam mewujudkan pemasyarakatan yang lebih transparan, aman, dan efisien, serta mendukung tugas pokok Direktorat Jenderal Pemasyarakatan (Ditjenpas) dalam menjaga ketertiban dan mencegah peredaran narkoba dan pelanggaran hukum lainnya.
@@ -134,7 +134,7 @@ export default function AboutUs() {
               font-bold text-[#3D3D3D] text-700 text-5xl md:text-6xl
               mb-10 md:mb-6
               mx-auto">
-                Visi & Misi Kami
+                Visi & Misi
           </h1>
 
           {/* Content */}
@@ -146,7 +146,7 @@ export default function AboutUs() {
               <div className="flex flex-col gap-2 mb-2">
                 <h3 className="text-3xl font-semibold text-[#3D3D3D] mt-3 md:mt-0">Visi Kami</h3>
                 <p className="text-lg text-[#3D3D3D]">
-                  Palapa Teknologi memiliki visi untuk menjadi penyedia layanan telekomunikasi dan Informasi handal
+                  Menjadi penyedia layanan telekomunikasi dan Informasi handal
                   dan terpercaya dengan kinerja prima yang berkelanjutan di Indonesia
                 </p>
               </div>
@@ -168,7 +168,7 @@ export default function AboutUs() {
                   <span className="text-lg text-[#3D3D3D] md:mt-1 xl:mt-0">Mewujudkan sistem terintegrasi dengan pelayanan terbaik</span>
                 </li>
                 <li className="flex items-center md:items-start gap-2">
-                  <RiCheckboxCircleFill className="text-[#3882F5] bg-[#E7F0FD] rounded-full p-1 w-7 h-7 shrink-0" />
+                  <RiCheckboxCircleFill className="text-[#3882F5] bg-[#E7F0FD] rounded-full dp-1 w-7 h-7 shrink-0" />
                   <span className="text-lg text-[#3D3D3D] md:mt-1 xl:mt-0">Menghadirkan teknologi informasi dan komunikasi dengan inovasi yang unggul</span>
                 </li>
               </ul>

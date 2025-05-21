@@ -14,7 +14,7 @@ const values = [
     icon: RiShieldCheckFill,
     position: "right",
     data: {
-      title: "Integritas sebagai Pilar Utama PT Pasopati",
+      title: "Integritas sebagai Pilar Utama PT Teknologi Nusantara Indonesia",
       detail: [
         { point: "Komitmen pada Kejujuran & Transparansi", desc: "Kami menjunjung tinggi prinsip keterbukaan dalam setiap aspek bisnis, memastikan kepercayaan pelanggan dan mitra tetap terjaga." },
         { point: "Etika dalam Setiap Keputusan", desc: "Setiap langkah yang kami ambil didasarkan pada nilai moral yang kuat, menciptakan bisnis yang adil dan bertanggung jawab." },
