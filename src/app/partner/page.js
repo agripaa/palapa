@@ -184,7 +184,7 @@ export default function Partner() {
                 }}
                 className="text-base text-gray-700 bg-[#F1F6FE] rounded-xl px-4 py-2 shadow-sm cursor-pointer w-1/2 lg:w-1/3"
               >
-                <option value="">Provinsi</option>
+                <option value="">Kantor Wilayah</option>
                 {Object.keys(cityData).map((region) => (
                   <option key={region} value={region}>
                     {region}
