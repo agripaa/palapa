@@ -3,108 +3,108 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 import React, { useState, useEffect } from "react";
-import { RiSearchLine, RiArrowDownSLine } from "react-icons/ri";
+import { RiSearchLine } from "react-icons/ri";
 
 export default function Partner() {
 
   const cityData = {
-    "Aceh": ["LPKA Banda Aceh", "Kelas IIA Lhokseumawe", "Banda Aceh"],
+    "Aceh": ["LPKA Banda Aceh", "Lapas Kelas IIA Lhokseumawe", "Lapas Banda Aceh"],
     "Sumatra Utara": [
       "Rutan Medan",
-      "Kelas IIA Binjai",
-      "Kelas IIA Pematangsiantar",
-      "Kelas IIA Tanjungbalai",
-      "Kelas IIA Labuhan Ruku",
-      "Gunungsitoli",
-      "Pancur Batu",
+      "Lapas Kelas IIA Binjai",
+      "Lapas Kelas IIA Pematangsiantar",
+      "Lapas Kelas IIA Tanjungbalai",
+      "Lapas Kelas IIA Labuhan Ruku",
+      "Lapas Gunungsitoli",
+      "Lapas Pancur Batu",
       "Rutan Balige",
       "Rutan Tarutung",
       "Rutan Padangsidimpuan",
     ],
-    "Sumatra Barat": ["Kelas IIA Taluang Kati", "Rutan Padang", "Pariaman"],
-    "Riau": [
+    "Sumatra Barat": ["Lapas Kelas IIA Taluang Kati", "Rutan Padang", "Lapas Pariaman"],
+    "Lapas Riau": [
       "Rutan Kelas IIB Pekanbaru",
-      "Kelas IIA Pekanbaru",
-      "Kelas IIA Bangkinang",
-      "Kelas IIA Bengkalis",
-      "Kelas IIA Dumai",
-      "Kelas IIA Pasir Pengaraian",
+      "Lapas Kelas IIA Pekanbaru",
+      "Lapas Kelas IIA Bangkinang",
+      "Lapas Kelas IIA Bengkalis",
+      "Lapas Kelas IIA Dumai",
+      "Lapas Kelas IIA Pasir Pengaraian",
     ],
     "Bengkulu": [
-      "Kelas IIA Curup",
-      "Kelas IIA Bengkulu",
-      "Perempuan Kelas IIA Bengkulu",
-      "Kelas IIB Arga Makmur",
-      "Kelas IIB Manna",
+      "Lapas Kelas IIA Curup",
+      "Lapas Kelas IIA Bengkulu",
+      "Lapas Perempuan Kelas IIA Bengkulu",
+      "Lapas Kelas IIB Arga Makmur",
+      "Lapas Kelas IIB Manna",
       "Rutan Kelas IIB Bengkulu",
     ],
     "Bangka Belitung": ["Rutan Kelas IIB Muntok"],
     "Lampung": [
       "Rutan Bandar Lampung",
-      "Kelas IIA Kotabumi",
-      "Kelas IIA Kalianda",
-      "Kelas IIA Way Kanan",
-      "Kelas IIA Gunung Sugih",
-      "Kelas IIA Kalianda",
-      "Kelas IIA Metro",
+      "Lapas Kelas IIA Kotabumi",
+      "Lapas Kelas IIA Kalianda",
+      "Lapas Kelas IIA Way Kanan",
+      "Lapas Kelas IIA Gunung Sugih",
+      "Lapas Kelas IIA Kalianda",
+      "Lapas Kelas IIA Metro",
     ],
     "DKI Jakarta": [
-      "Kelas I Cipinang",
-      "Perempuan Kelas IIA Jakarta",
-      "Narkotika Kelas IIA Jakarta",
-      "Salemba",
+      "Lapas Kelas I Cipinang",
+      "Lapas Perempuan Kelas IIA Jakarta",
+      "Lapas Narkotika Kelas IIA Jakarta",
+      "Lapas Salemba",
     ],
     "Banten": [
-      "Wanita Tangerang",
-      "Kelas I Tangerang",
-      "Kelas IIA Serang",
-      "Kelas IIA Cilegon",
+      "Lapas Wanita Tangerang",
+      "Lapas Kelas I Tangerang",
+      "Lapas Kelas IIA Serang",
+      "Lapas Kelas IIA Cilegon",
     ],
     "Jawa Barat": [
-      "Kelas I Sukamiskin",
-      "Kelas IIA Gunung Sindur",
-      "Kelas IIA Banceuy",
-      "Kelas IIA Karawang",
-      "Kelas IIA Bekasi",
-      "Kelas IIA Cirebon",
+      "Lapas Kelas I Sukamiskin",
+      "Lapas Kelas IIA Gunung Sindur",
+      "Lapas Kelas IIA Banceuy",
+      "Lapas Kelas IIA Karawang",
+      "Lapas Kelas IIA Bekasi",
+      "Lapas Kelas IIA Cirebon",
     ],
     "Jawa Tengah": [
-      "Kelas IIA Magelang",
-      "Kelas I Semarang",
-      "Kelas IIA Ambarawa",
-      "Kelas IIA Purwokerto",
-      "Kelas IIA Kendal",
+      "Lapas Kelas IIA Magelang",
+      "Lapas Kelas I Semarang",
+      "Lapas Kelas IIA Ambarawa",
+      "Lapas Kelas IIA Purwokerto",
+      "Lapas Kelas IIA Kendal",
     ],
     "Jawa Timur": [
-      "Kelas I Surabaya",
-      "Kelas I Malang",
-      "Kelas IIA Kediri",
-      "Kelas IIA Jember",
-      "Kelas IIA Banyuwangi",
+      "Lapas Kelas I Surabaya",
+      "Lapas Kelas I Malang",
+      "Lapas Kelas IIA Kediri",
+      "Lapas Kelas IIA Jember",
+      "Lapas Kelas IIA Banyuwangi",
       "Rutan Kelas I Medaeng",
     ],
     "D.I. Yogyakarta": [
-      "Kelas IIA Yogyakarta",
-      "Kelas IIA Sleman",
+      "Lapas Kelas IIA Yogyakarta",
+      "Lapas Kelas IIA Sleman",
       "Rutan Kelas IIB Yogyakarta",
     ],
-    "Bali": ["Kelas IIA Kerobokan", "Kelas IIB Singaraja", "Kelas IIB Klungkung"],
+    "Bali": ["Lapas Kelas IIA Kerobokan", "Lapas Kelas IIB Singaraja", "Lapas Kelas IIB Klungkung"],
     "Nusa Tenggara Barat": [
       "Rutan Kelas IIB Sumbawa",
-      "Kelas IIA Mataram",
-      "Kelas IIA Bima",
-      "Kelas IIB Dompu",
+      "Lapas Kelas IIA Mataram",
+      "Lapas Kelas IIA Bima",
+      "Lapas Kelas IIB Dompu",
     ],
-    "Nusa Tenggara Timur": ["Kelas IIA Kupang", "Kelas IIB Atambua", "Kelas IIB Ende"],
-    "Kalimantan Tengah": ["Kelas IIA Palangka Raya", "Kelas IIA Pangkalan Bun", "Kelas IIB Kapuas"],
-    "Kalimantan Timur": ["Kelas IIA Samarinda", "Kelas IIA Balikpapan", "Kelas IIB Tenggarong"],
-    "Kalimantan Selatan": ["Kelas IIA Banjarmasin", "Kelas IIA Banjarbaru", "Kelas IIA Kotabaru"],
-    "Kalimantan Barat": ["Kelas IIA Pontianak", "Kelas IIA Singkawang", "Kelas IIA Ketapang"],
-    "Sulawesi Selatan": ["Kelas I Makassar", "Kelas IIA Parepare", "Kelas IIA Palopo"],
-    "Sulawesi Utara": ["Kelas IIA Manado", "Kelas IIB Bitung", "Kelas IIB Tomohon"],
-    "Sulawesi Tengah": ["Kelas IIA Palu", "Kelas IIB Poso", "Kelas IIB Luwuk"],
-    "Sulawesi Tenggara": ["Kelas IIA Kendari", "Kelas IIB Baubau", "Kelas IIB Kolaka"],
-    "Maluku": ["Kelas IIA Ambon", "Kelas IIB Tual", "Kelas IIB Masohi"],
+    "Nusa Tenggara Timur": ["Lapas Kelas IIA Kupang", "Lapas Kelas IIB Atambua", "Lapas Kelas IIB Ende"],
+    "Kalimantan Tengah": ["Lapas Kelas IIA Palangka Raya", "Lapas Kelas IIA Pangkalan Bun", "Lapas Kelas IIB Kapuas"],
+    "Kalimantan Timur": ["Lapas Kelas IIA Samarinda", "Lapas Kelas IIA Balikpapan", "Lapas Kelas IIB Tenggarong"],
+    "Kalimantan Selatan": ["Lapas Kelas IIA Banjarmasin", "Lapas Kelas IIA Banjarbaru", "Lapas Kelas IIA Kotabaru"],
+    "Kalimantan Barat": ["Lapas Kelas IIA Pontianak", "Lapas Kelas IIA Singkawang", "Lapas Kelas IIA Ketapang"],
+    "Sulawesi Selatan": ["Lapas Kelas I Makassar", "Lapas Kelas IIA Parepare", "Lapas Kelas IIA Palopo"],
+    "Sulawesi Utara": ["Lapas Kelas IIA Manado", "Lapas Kelas IIB Bitung", "Lapas Kelas IIB Tomohon"],
+    "Sulawesi Tengah": ["Lapas Kelas IIA Palu", "Lapas Kelas IIB Poso", "Lapas Kelas IIB Luwuk"],
+    "Sulawesi Tenggara": ["Lapas Kelas IIA Kendari", "Lapas Kelas IIB Baubau", "Lapas Kelas IIB Kolaka"],
+    "Maluku": ["Lapas Kelas IIA Ambon", "Lapas Kelas IIB Tual", "Lapas Kelas IIB Masohi"],
   };
 
   const [searchTerm, setSearchTerm] = useState("");
@@ -165,7 +165,7 @@ export default function Partner() {
                 <RiSearchLine className="text-[#616161] mr-2 text-sm md:text-lg" />
                 <input
                   type="text"
-                  placeholder="Cari Lapas, cth: Kelas IIA Wanita Lampung"
+                  placeholder="Cari Lapas, cth: Lapas Kelas IIA Wanita Lampung"
                   className="bg-transparent w-full outline-none placeholder-[#616161] text-base"
                   value={searchTerm}
                   onChange={(e) => {
@@ -208,19 +208,19 @@ export default function Partner() {
                 <>
                   {/* Ini bagian default, copy dari manual datamu */}
                   <div className="grid grid-cols-2 gap-8 bg-[#E7F0FD] rounded-md px-2 py-1">
-                    <span>Kelas IIA Wanita Lampung</span>
+                    <span>Lapas Kelas IIA Wanita Lampung</span>
                     <span>Lampung</span>
                   </div>
                   <div className="grid grid-cols-2 gap-8 px-2 py-1">
-                    <span>Pekanbaru</span>
+                    <span>Lapas Pekanbaru</span>
                     <span>Riau</span>
                   </div>
                   <div className="grid grid-cols-2 gap-8 bg-[#E7F0FD] rounded-md px-2 py-1">
-                    <span>Wanita Medan</span>
+                    <span>Lapas Wanita Medan</span>
                     <span>Sumatra Utara</span>
                   </div>
                   <div className="grid grid-cols-2 gap-8 px-2 py-1">
-                    <span>Terbuka Mataram</span>
+                    <span>Lapas Terbuka Mataram</span>
                     <span>Nusa Tenggara Barat</span>
                   </div>
                   <div className="grid grid-cols-2 gap-8 bg-[#E7F0FD] rounded-md px-2 py-1">
@@ -228,7 +228,7 @@ export default function Partner() {
                     <span>Aceh</span>
                   </div>
                   <div className="grid grid-cols-2 gap-8 px-2 py-1">
-                    <span>Kelas IIA LHOKSEUMAWE</span>
+                    <span>Lapas Kelas IIA LHOKSEUMAWE</span>
                     <span>Aceh</span>
                   </div>
                   <div className="grid grid-cols-2 gap-8 bg-[#E7F0FD] rounded-md px-2 py-1">
@@ -236,11 +236,11 @@ export default function Partner() {
                     <span>Sumatra Utara</span>
                   </div>
                   <div className="grid grid-cols-2 gap-8 px-2 py-1">
-                    <span>Anak Medan</span>
+                    <span>Lapas Anak Medan</span>
                     <span>Sumatra Utara</span>
                   </div>
                   <div className="grid grid-cols-2 gap-8 bg-[#E7F0FD] rounded-md px-2 py-1">
-                    <span>Lhoksukun Ruku</span>
+                    <span>Lapas Lhoksukun Ruku</span>
                     <span>Sumatra Utara</span>
                   </div>
                   <div className="grid grid-cols-2 gap-8 px-2 py-1">
@@ -248,7 +248,7 @@ export default function Partner() {
                     <span>Sumatra Utara</span>
                   </div>
                   <div className="grid grid-cols-2 gap-8 bg-[#E7F0FD] rounded-md px-2 py-1">
-                    <span>Sibolga</span>
+                    <span>Lapas Sibolga</span>
                     <span>Sumatra Utara</span>
                   </div>
                 </>
