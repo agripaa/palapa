@@ -8,103 +8,103 @@ import { RiSearchLine, RiArrowDownSLine } from "react-icons/ri";
 export default function Partner() {
 
   const cityData = {
-    "Lapas Aceh": ["LPKA Banda Aceh", "Lapas Kelas IIA Lhokseumawe", "Lapas Banda Aceh"],
-    "Lapas Sumatra Utara": [
+    "Aceh": ["LPKA Banda Aceh", "Kelas IIA Lhokseumawe", "Banda Aceh"],
+    "Sumatra Utara": [
       "Rutan Medan",
-      "Lapas Kelas IIA Binjai",
-      "Lapas Kelas IIA Pematangsiantar",
-      "Lapas Kelas IIA Tanjungbalai",
-      "Lapas Kelas IIA Labuhan Ruku",
-      "Lapas Gunungsitoli",
-      "Lapas Pancur Batu",
+      "Kelas IIA Binjai",
+      "Kelas IIA Pematangsiantar",
+      "Kelas IIA Tanjungbalai",
+      "Kelas IIA Labuhan Ruku",
+      "Gunungsitoli",
+      "Pancur Batu",
       "Rutan Balige",
       "Rutan Tarutung",
       "Rutan Padangsidimpuan",
     ],
-    "Lapas Sumatra Barat": ["Lapas Kelas IIA Taluang Kati", "Rutan Padang", "Lapas Pariaman"],
-    "Lapas Riau": [
+    "Sumatra Barat": ["Kelas IIA Taluang Kati", "Rutan Padang", "Pariaman"],
+    "Riau": [
       "Rutan Kelas IIB Pekanbaru",
-      "Lapas Kelas IIA Pekanbaru",
-      "Lapas Kelas IIA Bangkinang",
-      "Lapas Kelas IIA Bengkalis",
-      "Lapas Kelas IIA Dumai",
-      "Lapas Kelas IIA Pasir Pengaraian",
+      "Kelas IIA Pekanbaru",
+      "Kelas IIA Bangkinang",
+      "Kelas IIA Bengkalis",
+      "Kelas IIA Dumai",
+      "Kelas IIA Pasir Pengaraian",
     ],
-    "Lapas Bengkulu": [
-      "Lapas Kelas IIA Curup",
-      "Lapas Kelas IIA Bengkulu",
-      "Lapas Perempuan Kelas IIA Bengkulu",
-      "Lapas Kelas IIB Arga Makmur",
-      "Lapas Kelas IIB Manna",
+    "Bengkulu": [
+      "Kelas IIA Curup",
+      "Kelas IIA Bengkulu",
+      "Perempuan Kelas IIA Bengkulu",
+      "Kelas IIB Arga Makmur",
+      "Kelas IIB Manna",
       "Rutan Kelas IIB Bengkulu",
     ],
-    "Lapas Bangka Belitung": ["Rutan Kelas IIB Muntok"],
-    "Lapas Lampung": [
+    "Bangka Belitung": ["Rutan Kelas IIB Muntok"],
+    "Lampung": [
       "Rutan Bandar Lampung",
-      "Lapas Kelas IIA Kotabumi",
-      "Lapas Kelas IIA Kalianda",
-      "Lapas Kelas IIA Way Kanan",
-      "Lapas Kelas IIA Gunung Sugih",
-      "Lapas Kelas IIA Kalianda",
-      "Lapas Kelas IIA Metro",
+      "Kelas IIA Kotabumi",
+      "Kelas IIA Kalianda",
+      "Kelas IIA Way Kanan",
+      "Kelas IIA Gunung Sugih",
+      "Kelas IIA Kalianda",
+      "Kelas IIA Metro",
     ],
-    "Lapas DKI Jakarta": [
-      "Lapas Kelas I Cipinang",
-      "Lapas Perempuan Kelas IIA Jakarta",
-      "Lapas Narkotika Kelas IIA Jakarta",
-      "Lapas Salemba",
+    "DKI Jakarta": [
+      "Kelas I Cipinang",
+      "Perempuan Kelas IIA Jakarta",
+      "Narkotika Kelas IIA Jakarta",
+      "Salemba",
     ],
-    "Lapas Banten": [
-      "Lapas Wanita Tangerang",
-      "Lapas Kelas I Tangerang",
-      "Lapas Kelas IIA Serang",
-      "Lapas Kelas IIA Cilegon",
+    "Banten": [
+      "Wanita Tangerang",
+      "Kelas I Tangerang",
+      "Kelas IIA Serang",
+      "Kelas IIA Cilegon",
     ],
-    "Lapas Jawa Barat": [
-      "Lapas Kelas I Sukamiskin",
-      "Lapas Kelas IIA Gunung Sindur",
-      "Lapas Kelas IIA Banceuy",
-      "Lapas Kelas IIA Karawang",
-      "Lapas Kelas IIA Bekasi",
-      "Lapas Kelas IIA Cirebon",
+    "Jawa Barat": [
+      "Kelas I Sukamiskin",
+      "Kelas IIA Gunung Sindur",
+      "Kelas IIA Banceuy",
+      "Kelas IIA Karawang",
+      "Kelas IIA Bekasi",
+      "Kelas IIA Cirebon",
     ],
-    "Lapas Jawa Tengah": [
-      "Lapas Kelas IIA Magelang",
-      "Lapas Kelas I Semarang",
-      "Lapas Kelas IIA Ambarawa",
-      "Lapas Kelas IIA Purwokerto",
-      "Lapas Kelas IIA Kendal",
+    "Jawa Tengah": [
+      "Kelas IIA Magelang",
+      "Kelas I Semarang",
+      "Kelas IIA Ambarawa",
+      "Kelas IIA Purwokerto",
+      "Kelas IIA Kendal",
     ],
-    "Lapas Jawa Timur": [
-      "Lapas Kelas I Surabaya",
-      "Lapas Kelas I Malang",
-      "Lapas Kelas IIA Kediri",
-      "Lapas Kelas IIA Jember",
-      "Lapas Kelas IIA Banyuwangi",
+    "Jawa Timur": [
+      "Kelas I Surabaya",
+      "Kelas I Malang",
+      "Kelas IIA Kediri",
+      "Kelas IIA Jember",
+      "Kelas IIA Banyuwangi",
       "Rutan Kelas I Medaeng",
     ],
-    "Lapas D.I. Yogyakarta": [
-      "Lapas Kelas IIA Yogyakarta",
-      "Lapas Kelas IIA Sleman",
+    "D.I. Yogyakarta": [
+      "Kelas IIA Yogyakarta",
+      "Kelas IIA Sleman",
       "Rutan Kelas IIB Yogyakarta",
     ],
-    "Lapas Bali": ["Lapas Kelas IIA Kerobokan", "Lapas Kelas IIB Singaraja", "Lapas Kelas IIB Klungkung"],
-    "Lapas Nusa Tenggara Barat": [
+    "Bali": ["Kelas IIA Kerobokan", "Kelas IIB Singaraja", "Kelas IIB Klungkung"],
+    "Nusa Tenggara Barat": [
       "Rutan Kelas IIB Sumbawa",
-      "Lapas Kelas IIA Mataram",
-      "Lapas Kelas IIA Bima",
-      "Lapas Kelas IIB Dompu",
+      "Kelas IIA Mataram",
+      "Kelas IIA Bima",
+      "Kelas IIB Dompu",
     ],
-    "Lapas Nusa Tenggara Timur": ["Lapas Kelas IIA Kupang", "Lapas Kelas IIB Atambua", "Lapas Kelas IIB Ende"],
-    "Lapas Kalimantan Tengah": ["Lapas Kelas IIA Palangka Raya", "Lapas Kelas IIA Pangkalan Bun", "Lapas Kelas IIB Kapuas"],
-    "Lapas Kalimantan Timur": ["Lapas Kelas IIA Samarinda", "Lapas Kelas IIA Balikpapan", "Lapas Kelas IIB Tenggarong"],
-    "Lapas Kalimantan Selatan": ["Lapas Kelas IIA Banjarmasin", "Lapas Kelas IIA Banjarbaru", "Lapas Kelas IIA Kotabaru"],
-    "Lapas Kalimantan Barat": ["Lapas Kelas IIA Pontianak", "Lapas Kelas IIA Singkawang", "Lapas Kelas IIA Ketapang"],
-    "Lapas Sulawesi Selatan": ["Lapas Kelas I Makassar", "Lapas Kelas IIA Parepare", "Lapas Kelas IIA Palopo"],
-    "Lapas Sulawesi Utara": ["Lapas Kelas IIA Manado", "Lapas Kelas IIB Bitung", "Lapas Kelas IIB Tomohon"],
-    "Lapas Sulawesi Tengah": ["Lapas Kelas IIA Palu", "Lapas Kelas IIB Poso", "Lapas Kelas IIB Luwuk"],
-    "Lapas Sulawesi Tenggara": ["Lapas Kelas IIA Kendari", "Lapas Kelas IIB Baubau", "Lapas Kelas IIB Kolaka"],
-    "Lapas Maluku": ["Lapas Kelas IIA Ambon", "Lapas Kelas IIB Tual", "Lapas Kelas IIB Masohi"],
+    "Nusa Tenggara Timur": ["Kelas IIA Kupang", "Kelas IIB Atambua", "Kelas IIB Ende"],
+    "Kalimantan Tengah": ["Kelas IIA Palangka Raya", "Kelas IIA Pangkalan Bun", "Kelas IIB Kapuas"],
+    "Kalimantan Timur": ["Kelas IIA Samarinda", "Kelas IIA Balikpapan", "Kelas IIB Tenggarong"],
+    "Kalimantan Selatan": ["Kelas IIA Banjarmasin", "Kelas IIA Banjarbaru", "Kelas IIA Kotabaru"],
+    "Kalimantan Barat": ["Kelas IIA Pontianak", "Kelas IIA Singkawang", "Kelas IIA Ketapang"],
+    "Sulawesi Selatan": ["Kelas I Makassar", "Kelas IIA Parepare", "Kelas IIA Palopo"],
+    "Sulawesi Utara": ["Kelas IIA Manado", "Kelas IIB Bitung", "Kelas IIB Tomohon"],
+    "Sulawesi Tengah": ["Kelas IIA Palu", "Kelas IIB Poso", "Kelas IIB Luwuk"],
+    "Sulawesi Tenggara": ["Kelas IIA Kendari", "Kelas IIB Baubau", "Kelas IIB Kolaka"],
+    "Maluku": ["Kelas IIA Ambon", "Kelas IIB Tual", "Kelas IIB Masohi"],
   };
 
   const [searchTerm, setSearchTerm] = useState("");
@@ -165,7 +165,7 @@ export default function Partner() {
                 <RiSearchLine className="text-[#616161] mr-2 text-sm md:text-lg" />
                 <input
                   type="text"
-                  placeholder="Cari Lapas, cth: Lapas Kelas IIA Wanita Lampung"
+                  placeholder="Cari Lapas, cth: Kelas IIA Wanita Lampung"
                   className="bg-transparent w-full outline-none placeholder-[#616161] text-base"
                   value={searchTerm}
                   onChange={(e) => {
@@ -199,8 +199,8 @@ export default function Partner() {
             <h2 className="text-3xl font-bold text-#3D3D3D mb-10">Lokasi Mitra Bisnis</h2>
 
             <div className="grid grid-cols-2 gap-8 font-semibold text-[#3D3D3D] mb-8 text-base">
-              <span>Nama Lapas</span>
-              <span>Nama Provinsi</span>
+              <span>Nama UPT</span>
+              <span>Kanwil (Kantor Wilayah)</span>
             </div>
 
             <div className="space-y-2 text-base text-[#3D3D3D] border-t pt-6">
@@ -208,19 +208,19 @@ export default function Partner() {
                 <>
                   {/* Ini bagian default, copy dari manual datamu */}
                   <div className="grid grid-cols-2 gap-8 bg-[#E7F0FD] rounded-md px-2 py-1">
-                    <span>Lapas Kelas IIA Wanita Lampung</span>
+                    <span>Kelas IIA Wanita Lampung</span>
                     <span>Lampung</span>
                   </div>
                   <div className="grid grid-cols-2 gap-8 px-2 py-1">
-                    <span>Lapas Pekanbaru</span>
+                    <span>Pekanbaru</span>
                     <span>Riau</span>
                   </div>
                   <div className="grid grid-cols-2 gap-8 bg-[#E7F0FD] rounded-md px-2 py-1">
-                    <span>Lapas Wanita Medan</span>
+                    <span>Wanita Medan</span>
                     <span>Sumatra Utara</span>
                   </div>
                   <div className="grid grid-cols-2 gap-8 px-2 py-1">
-                    <span>Lapas Terbuka Mataram</span>
+                    <span>Terbuka Mataram</span>
                     <span>Nusa Tenggara Barat</span>
                   </div>
                   <div className="grid grid-cols-2 gap-8 bg-[#E7F0FD] rounded-md px-2 py-1">
@@ -228,7 +228,7 @@ export default function Partner() {
                     <span>Aceh</span>
                   </div>
                   <div className="grid grid-cols-2 gap-8 px-2 py-1">
-                    <span>Lapas Kelas IIA LHOKSEUMAWE</span>
+                    <span>Kelas IIA LHOKSEUMAWE</span>
                     <span>Aceh</span>
                   </div>
                   <div className="grid grid-cols-2 gap-8 bg-[#E7F0FD] rounded-md px-2 py-1">
@@ -236,11 +236,11 @@ export default function Partner() {
                     <span>Sumatra Utara</span>
                   </div>
                   <div className="grid grid-cols-2 gap-8 px-2 py-1">
-                    <span>Lapas Anak Medan</span>
+                    <span>Anak Medan</span>
                     <span>Sumatra Utara</span>
                   </div>
                   <div className="grid grid-cols-2 gap-8 bg-[#E7F0FD] rounded-md px-2 py-1">
-                    <span>Lapas Lhoksukun Ruku</span>
+                    <span>Lhoksukun Ruku</span>
                     <span>Sumatra Utara</span>
                   </div>
                   <div className="grid grid-cols-2 gap-8 px-2 py-1">
@@ -248,7 +248,7 @@ export default function Partner() {
                     <span>Sumatra Utara</span>
                   </div>
                   <div className="grid grid-cols-2 gap-8 bg-[#E7F0FD] rounded-md px-2 py-1">
-                    <span>Lapas Sibolga</span>
+                    <span>Sibolga</span>
                     <span>Sumatra Utara</span>
                   </div>
                 </>
@@ -265,7 +265,7 @@ export default function Partner() {
                   </div>
                 ))
               ) : (
-                <div className="text-center py-4 text-gray-500">Lapas tidak ditemukan.</div>
+                <div className="text-center py-4 text-gray-500">UPT tidak ditemukan.</div>
               )}
             </div>
 

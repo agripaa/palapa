@@ -38,7 +38,7 @@ const partnerships = [
     title: "Optimalisasi Iwartelsus dan IMC Pas (Integrated Monitoring Center Pemasyarakatan)",
     year: 2021,
     description:
-      "4.	Perjanjian Kerjasama  Antara Direktorat Jenderal Pemasyarakatan Kementrian Hukum dan Hak Asasi Manusia dengan PT. Palapa Teknologi  Indonesia Nomor  PAS-10.HH.05.05 Tahun 2021 dan No 013/PKS-DITJENPAS/IV/2021 tanggal 27 April 2021 tentang Optimalisasi I-Wartelsus dan Pemanfaatan IMC PAS Sebagai Sarana Monitoring dan Deteksi Dini Pemasyarakatan",
+      "Perjanjian Kerjasama  Antara Direktorat Jenderal Pemasyarakatan Kementrian Hukum dan Hak Asasi Manusia dengan PT. Palapa Teknologi  Indonesia Nomor  PAS-10.HH.05.05 Tahun 2021 dan No 013/PKS-DITJENPAS/IV/2021 tanggal 27 April 2021 tentang Optimalisasi I-Wartelsus dan Pemanfaatan IMC PAS Sebagai Sarana Monitoring dan Deteksi Dini Pemasyarakatan",
   },
 ];
 
@@ -144,7 +144,7 @@ export default function AboutUs() {
             <div className="bg-[#FFF] p-6 rounded-xl flex gap-4 w-full lg:w-3/4 justify-left mx-auto">
             <RiRocket2Line className="text-2xl text-[#fff] bg-[#3882F5] rounded-full p-2 w-10 h-10 shrink-0" />
               <div className="flex flex-col gap-2 mb-2">
-                <h3 className="text-3xl font-semibold text-[#3D3D3D] mt-3 md:mt-0">Visi Kami</h3>
+                <h3 className="text-3xl font-semibold text-[#3D3D3D] mt-3 md:mt-0">Visi</h3>
                 <p className="text-lg text-[#3D3D3D]">
                   Menjadi penyedia layanan telekomunikasi dan Informasi handal
                   dan terpercaya dengan kinerja prima yang berkelanjutan di Indonesia
@@ -157,7 +157,7 @@ export default function AboutUs() {
             <div className="bg-[#FFF] p-6 rounded-xl flex gap-4 w-full lg:w-3/4 justify-left mx-auto">
               <RiFocus2Line className="p-2 w-10 h-10 shrink-0 text-[#fff] bg-[#FF4255] rounded-full" />
               <div className="flex flex-col gap-2 mb-2 mt-4 md:mt-1">
-                <h3 className="text-3xl font-semibold text-[#3D3D3D]">Misi Kami</h3>
+                <h3 className="text-3xl font-semibold text-[#3D3D3D]">Misi</h3>
                 <ul className="space-y-4 mt-2">
                 <li className="flex items-center md:items-start gap-2">
                   <RiCheckboxCircleFill className="text-[#3882F5] bg-[#E7F0FD] rounded-full p-1 w-7 h-7 shrink-0" />
